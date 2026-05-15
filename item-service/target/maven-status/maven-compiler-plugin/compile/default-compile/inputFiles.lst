@@ -1,0 +1,9 @@
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\domain\po\Item.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\service\IItemService.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\mapper\ItemMapper.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\domain\dto\ItemDTO.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\domain\dto\OrderDetailDTO.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\domain\query\ItemPageQuery.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\ItemApplication.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\service\impl\ItemServiceImpl.java
+D:\JavaSelfLearn\hmall\item-service\src\main\java\com\hmall\item\controller\ItemController.java

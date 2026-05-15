@@ -1,0 +1,26 @@
+server:
+  port: 8082
+  tomcat:
+    threads:
+      max: 25 # 最大线程数
+    accept-count: 25 # 线程占满后，最大排队数
+    max-connections: 100 # 最大连接数
+
+feign:
+  okhttp:
+    enabled: true
+  sentinel:
+    enabled: true
+hm:
+  db:
+    database: hm-cart
+  swagger:
+    title: 黑马商城购物车接口文档
+    desc: 黑马商城购物车接口文档
+    package: com.hmall.cart.controller
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090 #sentinel控制台地址
+      http-method-specify: true #配置：请求方式+请求路径作为簇点资源名称

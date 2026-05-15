@@ -1,0 +1,10 @@
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\ConsultantApplication.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\controller\aiservice\ConsultantService.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\po\Reservation.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\service\impl\ReservationImpl.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\controller\ChatController.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\mapper\ReservationMapper.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\config\CommonConfig.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\tool\ReservationTool.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\service\ReservationService.java
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\repository\RedisChatMemoryStore.java

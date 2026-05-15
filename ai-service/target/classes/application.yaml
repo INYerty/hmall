@@ -1,0 +1,50 @@
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: ${API-KEY}
+      model-name: qwen-plus
+      log-requests: true
+      log-responses: true
+    streaming-chat-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: ${API-KEY}
+      model-name: qwen-plus
+      log-requests: true
+      log-responses: true
+    embedding-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: ${API-KEY}
+      model-name: text-embedding-v4
+      log-requests: true
+      log-responses: true
+      max-segments-per-batch: 10  # 最大批量处理数量 (text-embedding-v4最大是10) 这里设置10 即每次处理10个,分多次
+  #langchain4j 的向量数据库的配置 (基于redis)
+  community:
+    redis:
+      host: host.docker.internal
+      port: 6378
+      index-name: embedding-index
+      dimension: 1024
+
+logging:
+  level:
+    dev.langchain4j: debug
+
+# 上下文记忆的配置(redis)
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: root
+      database: 5
+  datasource:
+    url: jdbc:mysql://localhost:3306/langchain4j?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
