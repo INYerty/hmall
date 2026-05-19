@@ -1,0 +1,28 @@
+🔧 MyBatis-Plus 3.4.3 + Java 17 临时修复
+
+使用以下JVM参数启动任何服务，可以临时解决模块系统问题：
+
+--add-opens java.base/java.lang.invoke=ALL-UNNAMED
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+➤ IntelliJ IDEA 中设置：
+
+1. Run → Edit Configurations
+2. 找到你的运行配置（如 UserApplication）
+3. VMs options 输入：
+   --add-opens java.base/java.lang.invoke=ALL-UNNAMED
+
+4. Apply → OK → 重新运行
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+➤ Maven 运行：
+
+mvn spring-boot:run -Dspring-boot.run.jvmArguments="--add-opens java.base/java.lang.invoke=ALL-UNNAMED"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏳ 同时，pom.xml 已更新为 MyBatis-Plus 3.5.5
+等 Maven 完成后，就不需要这个参数了。
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-261.22158.277">
+  <component name="dataSourceStorageLocal" created-in="IU-261.24374.151">
     <data-source name="@192.168.88.131" uuid="0037d04f-6a16-469f-b556-df0be7228bf1">
       <database-info product="MySQL" version="9.6.0" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="9.6.0" exact-driver-version="8.2">
         <extra-name-characters>#@</extra-name-characters>
@@ -12,6 +12,16 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="0@localhost" uuid="3ee60f8a-041a-411b-9ff5-e61b482bfdf7">
+      <database-info product="Redis Standalone" version="3.2.100" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.5" dbms="REDIS" exact-version="3.2.100" exact-driver-version="1.5" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" negative="1" />
         </introspection-scope>
       </schema-mapping>
     </data-source>

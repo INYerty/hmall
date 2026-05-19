@@ -1,5 +1,7 @@
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\utils\BeanUtils.java
+D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\config\MqConsumeErrorAutoConfiguration.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\exception\DbException.java
+D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\config\MvcConfig.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\utils\WebUtils.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\config\MyBatisConfig.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\domain\PageQuery.java
@@ -11,8 +13,11 @@ D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\utils\CookieBuil
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\exception\ForbiddenException.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\utils\CollUtils.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\domain\R.java
+D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\interceptors\UserInfoInterceptor.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\exception\CommonException.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\advice\CommonExceptionAdvice.java
+D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\utils\RabbitMqHelper.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\config\JsonConfig.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\exception\BadRequestException.java
 D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\utils\UserContext.java
+D:\JavaSelfLearn\hmall\hm-common\src\main\java\com\hmall\common\config\MQConfig.java

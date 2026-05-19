@@ -2,49 +2,66 @@ langchain4j:
   open-ai:
     chat-model:
       base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api-key: ${API-KEY}
-      model-name: qwen-plus
+      api-key: ${BAILIAN_API_KEY}
+      model-name: qwen-plus-2025-09-11
       log-requests: true
       log-responses: true
     streaming-chat-model:
       base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api-key: ${API-KEY}
-      model-name: qwen-plus
+      api-key: ${BAILIAN_API_KEY}
+      model-name: qwen-plus-2025-09-11
       log-requests: true
       log-responses: true
     embedding-model:
       base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api-key: ${API-KEY}
+      api-key: ${BAILIAN_API_KEY}
       model-name: text-embedding-v4
       log-requests: true
       log-responses: true
       max-segments-per-batch: 10  # 最大批量处理数量 (text-embedding-v4最大是10) 这里设置10 即每次处理10个,分多次
-  #langchain4j 的向量数据库的配置 (基于redis)
+  #langchain4j 的向量数据库的配置 (基于Milvus)
   community:
-    redis:
-      host: host.docker.internal
-      port: 6378
-      index-name: embedding-index
+    milvus:
+      host: localhost
+      port: 19530
+      collection-name: embedding_collection
       dimension: 1024
 
 logging:
   level:
     dev.langchain4j: debug
 
+server:
+  port: 8087
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+  servlet:
+    encoding:
+      charset: UTF-8
+      force-response: true
+
 # 上下文记忆的配置(redis)
 spring:
-  data:
-    redis:
-      host: localhost
-      port: 6379
-      password: root
-      database: 5
+  application:
+    name: ai-service
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: root
+    database: 0
   datasource:
     url: jdbc:mysql://localhost:3306/langchain4j?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      server-addr: 192.168.88.131:8848
+      discovery:
+        namespace: hmall
+        enabled: false  # Disable Nacos discovery for local development
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
-

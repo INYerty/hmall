@@ -6,7 +6,7 @@ import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import dev.langchain4j.service.spring.AiService;
 import dev.langchain4j.service.spring.AiServiceWiringMode;
-import reactor.core.publisher.Flux;
+import dev.langchain4j.service.TokenStream;
 
 //@AiService(
 //        wiringMode = AiServiceWiringMode.EXPLICIT, //手动装配
@@ -20,8 +20,8 @@ import reactor.core.publisher.Flux;
         streamingChatModel = "openAiStreamingChatModel",
         //chatMemory = "chatMemory"
         chatMemoryProvider = "chatMemoryProvider", //配置会话记忆提供者对象
-        contentRetriever = "contentRetriever",   //配置向量数据库检索对象
-        tools = "reservationTool" //配置工具对象
+        // contentRetriever = "contentRetriever",   // 注释掉：Milvus 未启动时会导致启动失败
+        tools = {"reservationTool", "recommendationTool"} //配置工具对象
 )
 public interface ConsultantService {
     @SystemMessage(fromResource = "system.txt")
@@ -30,5 +30,5 @@ public interface ConsultantService {
     //用于聊天的方法
     //注意：如果添加了@MemoryId注解，chat方法就有了两个参数，一个是MemoryId，
     // 一个就是用户输入的message，这里要对用户输入的message加上注解@UserMessage
-    public Flux<String> chat(@MemoryId String MemoryId,@UserMessage String message);
+    public TokenStream chat(@MemoryId String MemoryId, @UserMessage String message);
 }

@@ -2,12 +2,14 @@ package com.inyert.consultant;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-public class ConsultantApplication {
+@EnableFeignClients(basePackages = "com.inyert.consultant.client")
+public class AiServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsultantApplication.class, args);
+        SpringApplication.run(AiServiceApplication.class, args);
     }
 
 }

@@ -20,6 +20,9 @@ public class RedisChatMemoryStore implements ChatMemoryStore {
     public List getMessages(Object memoryId) {
         //获取会话消息
         String json = redisTemplate.opsForValue().get(memoryId);
+        if (json == null || json.isBlank()) {
+            return java.util.Collections.emptyList();
+        }
         //反序列化会话消息
         return ChatMessageDeserializer.messagesFromJson(json);
     }
