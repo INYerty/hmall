@@ -375,3 +375,28 @@
 22:24:05:680  INFO 9600 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service.yaml, group=DEFAULT_GROUP
 22:24:05:680  INFO 9600 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service-local.yaml, group=DEFAULT_GROUP
 22:24:05:681  INFO 9600 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service, group=DEFAULT_GROUP
+22:26:13:080  WARN 9600 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:26:13:080  WARN 9600 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:26:13:083  WARN 9600 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:26:13:084  WARN 9600 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:26:13:611  INFO 9600 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:26:13:622  INFO 9600 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:26:13:957  INFO 9600 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+22:26:13:957  INFO 9600 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1b1aa21a[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:26:13:957  INFO 9600 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1779287040598_192.168.88.1_10518
+22:26:13:959  INFO 9600 --- [nacos-grpc-client-executor-33] c.a.n.c.remote.client.grpc.GrpcClient    : [1779287040598_192.168.88.1_10518]Ignore complete event,isRunning:false,isAbandon=false
+22:26:13:961  INFO 9600 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@217998ce[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 34]
+22:26:13:965  INFO 9600 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+22:26:13:984  INFO 9600 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+22:26:13:986  INFO 9600 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x487ad5da, L:/192.168.88.1:13419 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x487ad5da, L:/192.168.88.1:13419 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x5a73a05b, L:/192.168.88.1:13423 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x5a73a05b, L:/192.168.88.1:13423 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x487ad5da, L:/192.168.88.1:13419 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x5a73a05b, L:/192.168.88.1:13423 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x487ad5da, L:/192.168.88.1:13419 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x5a73a05b, L:/192.168.88.1:13423 ! R:/192.168.88.131:8099]
+22:26:13:987  INFO 9600 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x487ad5da, L:/192.168.88.1:13419 ! R:/192.168.88.131:8099]) will closed
+22:26:13:987  INFO 9600 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a73a05b, L:/192.168.88.1:13423 ! R:/192.168.88.131:8099]) will closed
+22:26:13:987  INFO 9600 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x487ad5da, L:/192.168.88.1:13419 ! R:/192.168.88.131:8099]) will closed
+22:26:13:987  INFO 9600 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a73a05b, L:/192.168.88.1:13423 ! R:/192.168.88.131:8099]) will closed

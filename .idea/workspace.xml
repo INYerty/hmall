@@ -4,47 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0037d04f-6a16-469f-b556-df0be7228bf1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0037d04f-6a16-469f-b556-df0be7228bf1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/db-forest-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/client/ItemClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/client/ItemClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/config/CommonConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/RecommendationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/RecommendationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/aiservice/ConsultantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/aiservice/ConsultantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/po/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/po/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/repository/RedisChatMemoryStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/service/impl/ProductRecommendationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/service/impl/ProductRecommendationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/RecommendationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/RecommendationTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/aiservice/ConsultantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/aiservice/ConsultantService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/mapper/ReservationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/mapper/ReservationMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/po/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/po/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/repository/RedisChatMemoryStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/ReservationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/ReservationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/impl/ReservationImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/impl/ReservationImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/tool/ReservationTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/tool/ReservationTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/test-classes/com/inyert/consultant/ConsultantApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/test-classes/com/inyert/consultant/ReservationServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" beforeDir="false" afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
+    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
     </list>
@@ -428,10 +388,10 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="AiServiceApplication" value="FAILED" />
+              <entry key="AiServiceApplication" value="STOPPED" />
               <entry key="CartApplication" value="FAILED" />
-              <entry key="GatewayApplication" value="FAILED" />
-              <entry key="ItemApplication" value="FAILED" />
+              <entry key="GatewayApplication" value="STOPPED" />
+              <entry key="ItemApplication" value="STOPPED" />
               <entry key="PayApplication" value="STOPPED" />
               <entry key="TradeApplication" value="STOPPED" />
               <entry key="UserApplication" value="STOPPED" />
@@ -708,7 +668,7 @@
       <workItem from="1779191558892" duration="5010000" />
       <workItem from="1779196792430" duration="126000" />
       <workItem from="1779196964748" duration="601000" />
-      <workItem from="1779261140722" duration="20409000" />
+      <workItem from="1779261140722" duration="20596000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -718,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779196897657</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
+      <option name="closed" value="true" />
+      <created>1779287152598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779287152598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,7 +721,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能" />
+    <MESSAGE value="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
