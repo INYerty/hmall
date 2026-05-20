@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
-      <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +16,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="48ac5459-7235-4ad6-9f47-56866ab85946" />
+        <option name="activeSessionId" value="35507b47-a7d1-4e57-9284-cb41a644a474" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -102,6 +102,14 @@
             <option name="status" value="Stopped" />
             <option name="targetType" value="LOCAL" />
           </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="35507b47-a7d1-4e57-9284-cb41a644a474" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="claude-haiku-4.5" />
+            <option name="targetType" value="LOCAL" />
+          </session>
         </option>
         <option name="type" value="PANEL" />
       </chat>
@@ -122,7 +130,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="626" />
+    <option name="cachedIndexableFilesCount" value="636" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,6 +149,9 @@
     &quot;assignee&quot;: &quot;INYerty&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1d842a96-4c54-4378-ab2e-d8fbc1cdce5a" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/INYerty/hmall.git&quot;,
@@ -347,7 +358,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.customization.CustomizationConfigurable",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true",
     "应用程序.ConsultantApplication.executor": "Run"
   },
@@ -669,6 +680,7 @@
       <workItem from="1779196792430" duration="126000" />
       <workItem from="1779196964748" duration="601000" />
       <workItem from="1779261140722" duration="20596000" />
+      <workItem from="1779287287332" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -686,7 +698,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779287152598</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
+      <option name="closed" value="true" />
+      <created>1779287341732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779287341732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
