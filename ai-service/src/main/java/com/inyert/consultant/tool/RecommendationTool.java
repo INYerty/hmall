@@ -2,111 +2,107 @@ package com.inyert.consultant.tool;
 
 import com.hmall.api.dto.ItemDTO;
 import com.inyert.consultant.client.ItemClient;
-import dev.langchain4j.agent.tool.Tool;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 /**
- * 商品推荐工具
- * 提供AI能调用的商品查询和推荐功能
+ * 商品推荐工具 (Spring AI)
  */
 @Component
 public class RecommendationTool {
 
+    // 建议替换为数据库中真实的手机类商品 ID
+    public static final List<Long> SAMPLE_RECOMMEND_IDS = List.of(100002672274L, 100002672272L, 100002651384L, 100002662190L, 100002624522L, 100002544842L);
+    public static final List<Long> HOT_ITEM_IDS = List.of(100002465730L, 100002440466L, 100002352522L, 100002292164L, 100002260394L);
+
     @Autowired
     private ItemClient itemClient;
 
-    /**
-     * 根据关键词和分类推荐商品
-     * @param keyword 搜索关键词（如：手机、家电等）
-     * @param category 商品分类
-     * @return 推荐的商品列表
-     */
-    @Tool("根据用户的需求推荐符合条件的商品。输入搜索关键词和分类，返回推荐的商品列表。推荐商品时要考虑用户的实际需求，选择性价比高、评价好的商品")
-    public String recommendItems(String keyword, String category) {
-        try {
-            // 这里可以根据实际需求调用商品查询接口
-            // 目前演示用随机ID查询
-            List<Long> sampleIds;
+    @Bean
+    @Description("当用户询问任何具体商品（如手机、衣服）时，必须调用此工具。输入关键词和分类，返回平台真实的商品列表。严禁在没有调用此工具的情况下回答商品推荐问题。")
+    public Function<RecommendRequest, String> recommendItems() {
+        return req -> {
+            try {
+                // 显式声明 Supplier 的返回类型以解决泛型推断问题
+                java.util.function.Supplier<List<ItemDTO>> supplier = () -> {
+                    try {
+                        return itemClient.queryItemByIds(SAMPLE_RECOMMEND_IDS);
+                    } catch (Exception e) {
+                        System.err.println("Feign 调用失败，详细错误: ");
+                        e.printStackTrace();
+                        return java.util.Collections.emptyList();
+                    }
+                };
+                
+                List<ItemDTO> items = java.util.concurrent.CompletableFuture.supplyAsync(supplier).join();
+                System.out.println("[TOOL-DEBUG] Feign 调用成功，返回商品数量: " + (items != null ? items.size() : 0));
+                if (items != null && !items.isEmpty()) {
+                    System.out.println("[TOOL-DEBUG] 第一个商品名称: " + items.get(0).getName());
+                }
 
-            // 根据不同的分类返回不同范围的商品ID
-            if (category != null && category.contains("手机")) {
-                sampleIds = List.of(1L, 2L, 3L, 4L, 5L);
-            } else if (category != null && category.contains("家电")) {
-                sampleIds = List.of(10L, 11L, 12L, 13L, 14L);
-            } else if (category != null && category.contains("服装")) {
-                sampleIds = List.of(20L, 21L, 22L, 23L, 24L);
-            } else {
-                // 默认推荐一些热门商品
-                sampleIds = List.of(1L, 2L, 10L, 11L, 20L, 21L);
+                if (items == null || items.isEmpty()) {
+                    return "抱歉，根据您的需求暂未找到合适的商品（当前 item-service 可能未启动）。";
+                }
+                StringBuilder result = new StringBuilder("根据您的需求，为您推荐以下商品：\n");
+                for (ItemDTO item : items) {
+                    result.append(String.format(
+                        "【%s】- 品牌：%s - 价格：¥%.2f - 销量：%d件\n",
+                        item.getName(),
+                        item.getBrand() != null ? item.getBrand() : "未知",
+                        item.getPrice() / 100.0,
+                        item.getSold() != null ? item.getSold() : 0
+                    ));
+                }
+                return result.toString();
+            } catch (Exception e) {
+                return "推荐商品时出错：" + e.getMessage();
             }
-
-            // 查询商品详情
-            List<ItemDTO> items = itemClient.queryItemByIds(sampleIds);
-
-            if (items == null || items.isEmpty()) {
-                return "抱歉，根据您的需求暂未找到合适的商品。";
-            }
-
-            // 格式化推荐结果
-            StringBuilder result = new StringBuilder("根据您的需求，为您推荐以下商品：\n");
-
-            for (ItemDTO item : items) {
-                result.append(String.format(
-                    "【%s】\n" +
-                    "  品牌：%s\n" +
-                    "  分类：%s\n" +
-                    "  价格：¥%.2f\n" +
-                    "  销量：%d件\n" +
-                    "  评论数：%d条\n" +
-                    "  库存：%d件\n\n",
-                    item.getName(),
-                    item.getBrand() != null ? item.getBrand() : "未知",
-                    item.getCategory() != null ? item.getCategory() : "未知",
-                    item.getPrice() / 100.0,
-                    item.getSold() != null ? item.getSold() : 0,
-                    item.getCommentCount() != null ? item.getCommentCount() : 0,
-                    item.getStock() != null ? item.getStock() : 0
-                ));
-            }
-
-            return result.toString();
-        } catch (Exception e) {
-            return "推荐商品时出错：" + e.getMessage();
-        }
+        };
     }
 
-    /**
-     * 获取热销商品
-     * @return 热销商品列表
-     */
-    @Tool("获取当前平台热销的商品列表")
-    public String getHotItems() {
-        try {
-            List<Long> hotIds = List.of(1L, 2L, 3L, 4L, 5L);
-            List<ItemDTO> items = itemClient.queryItemByIds(hotIds);
-
-            if (items == null || items.isEmpty()) {
-                return "当前暂无热销商品信息。";
+    @Bean
+    @Description("获取当前平台热销的商品列表")
+    public Function<EmptyRequest, String> getHotItems() {
+        return v -> {
+            try {
+                List<ItemDTO> items = java.util.concurrent.CompletableFuture.supplyAsync(() ->
+                        itemClient.queryItemByIds(HOT_ITEM_IDS)
+                ).join();
+                if (items == null || items.isEmpty()) {
+                    return "当前暂无热销商品信息。";
+                }
+                StringBuilder result = new StringBuilder("当前热销商品列表：\n");
+                for (ItemDTO item : items) {
+                    result.append(String.format(
+                        "【%s】- ¥%.2f（销量：%d件）\n",
+                        item.getName(),
+                        item.getPrice() / 100.0,
+                        item.getSold() != null ? item.getSold() : 0
+                    ));
+                }
+                return result.toString();
+            } catch (Exception e) {
+                return "获取热销商品时出错：" + e.getMessage();
             }
-
-            StringBuilder result = new StringBuilder("当前热销商品列表：\n");
-            for (ItemDTO item : items) {
-                result.append(String.format(
-                    "【%s】- ¥%.2f（销量：%d件）\n",
-                    item.getName(),
-                    item.getPrice() / 100.0,
-                    item.getSold() != null ? item.getSold() : 0
-                ));
-            }
-
-            return result.toString();
-        } catch (Exception e) {
-            return "获取热销商品时出错：" + e.getMessage();
-        }
+        };
     }
+
+    public List<ItemDTO> querySampleItems() {
+        return java.util.concurrent.CompletableFuture.supplyAsync(() ->
+                itemClient.queryItemByIds(SAMPLE_RECOMMEND_IDS)
+        ).join();
+    }
+
+    public record RecommendRequest(
+            @com.fasterxml.jackson.annotation.JsonProperty(required = true)
+            @com.fasterxml.jackson.annotation.JsonPropertyDescription("关键词，如手机、衣服") String keyword,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = true)
+            @com.fasterxml.jackson.annotation.JsonPropertyDescription("分类，如电子产品") String category) {}
+
+    public record EmptyRequest() {}
 }
-

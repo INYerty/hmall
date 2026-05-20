@@ -4,193 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JVM_ARGS_FIX.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/COMPLETION_REPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/IMPLEMENTATION_SUMMARY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/ISSUE_RESOLVED.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/PROJECT_STRUCTURE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/QUICK_START.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/RECOMMENDATION_GUIDE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/STARTUP_TROUBLESHOOTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/START_HERE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/START_LINUX.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/START_WINDOWS.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/URGENT_FIX.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/client/ItemClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/RecommendationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/service/ProductRecommendationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/service/impl/ProductRecommendationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/RecommendationTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-service/src/main/resources/com/inyert/consultant/controller/aiservice/system.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/hm-refresh-admin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/hm-mall-admin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/hm-mall-portal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" afterDir="false" />
+    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
+      <change afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0037d04f-6a16-469f-b556-df0be7228bf1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0037d04f-6a16-469f-b556-df0be7228bf1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/db-forest-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/ConsultantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/AiServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/config/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/config/CommonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/client/ItemClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/client/ItemClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/config/CommonConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/RecommendationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/RecommendationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/aiservice/ConsultantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/controller/aiservice/ConsultantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/repository/RedisChatMemoryStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/repository/RedisChatMemoryStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/po/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/po/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/repository/RedisChatMemoryStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/service/impl/ProductRecommendationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/service/impl/ProductRecommendationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/RecommendationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/RecommendationTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/system.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/resources/system.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/ConsultantApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/config/CommonConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/ChatController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/aiservice/ConsultantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/controller/aiservice/ConsultantService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/repository/RedisChatMemoryStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/repository/RedisChatMemoryStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/system.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/system.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/langchain4j-0.35.0.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/mapper/ReservationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/mapper/ReservationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/po/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/po/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/repository/RedisChatMemoryStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/ReservationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/ReservationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/impl/ReservationImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/service/impl/ReservationImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/tool/ReservationTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/com/inyert/consultant/tool/ReservationTool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/CartApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/CartApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/config/CartProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/config/CartProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/controller/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/domain/dto/CartFormDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/domain/dto/CartFormDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/domain/po/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/domain/po/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/domain/vo/CartVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/domain/vo/CartVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/listener/ClearCartListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/listener/ClearCartListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/mapper/CartMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/mapper/CartMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/ICartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/ICartService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/hmall/cart/service/impl/CartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/CartClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/CartClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/PayClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/PayClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/TradeClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/TradeClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/UserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/UserClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/ItemClientFallbackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/ItemClientFallbackFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/ItemClientFallbackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/ItemClientFallbackFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/PayClientFallback$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/PayClientFallback$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/PayClientFallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/PayClientFallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/ItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/ItemDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/OrderDetailDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/OrderDetailDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/PayOrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/PayOrderDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/advice/CommonExceptionAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/advice/CommonExceptionAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/JsonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/JsonConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MQConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MQConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MqConsumeErrorAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MqConsumeErrorAutoConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MyBatisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MyBatisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/PageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/PageDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/PageQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/PageQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/BadRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/BizIllegalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/BizIllegalException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/CommonException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/CommonException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/DbException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/DbException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/ForbiddenException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/ForbiddenException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/UnauthorizedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/UnauthorizedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/interceptors/UserInfoInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/interceptors/UserInfoInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/BeanUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/BeanUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/CollUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/CollUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/Convert.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/Convert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/CookieBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/CookieBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/RabbitMqHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/RabbitMqHelper$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/RabbitMqHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/RabbitMqHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/UserContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/UserContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/WebUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/WebUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/GatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/AuthProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/AuthProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/JwtProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/JwtProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/filters/AuthGlobalFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/filters/AuthGlobalFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/routers/DynamicRouteLoader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/routers/DynamicRouteLoader$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/routers/DynamicRouteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/routers/DynamicRouteLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/utils/JwtTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/utils/JwtTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/ItemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/ItemApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/dto/ItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/dto/ItemDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/dto/OrderDetailDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/dto/OrderDetailDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/po/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/po/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/po/ItemDoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/po/ItemDoc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/query/ItemPageQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/domain/query/ItemPageQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/mapper/ItemMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/mapper/ItemMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/IItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/IItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/impl/ItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/test-classes/com/hmall/item/es/ElasticDocumentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/test-classes/com/hmall/item/es/ElasticDocumentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/test-classes/com/hmall/item/es/ElasticIndexTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/test-classes/com/hmall/item/es/ElasticIndexTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/target/test-classes/com/hmall/item/es/ElasticSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/test-classes/com/hmall/item/es/ElasticSearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/test-classes/com/inyert/consultant/ConsultantApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/test-classes/com/inyert/consultant/ReservationServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" beforeDir="false" afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/pay-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pay-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/trade-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/trade-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/PayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/PayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/controller/PayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayApplyDTO$PayApplyDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayApplyDTO$PayApplyDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayApplyDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayApplyDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayOrderFormDTO$PayOrderFormDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayOrderFormDTO$PayOrderFormDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayOrderFormDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/dto/PayOrderFormDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/po/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/po/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/po/PayOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/po/PayOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/vo/PayOrderVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/domain/vo/PayOrderVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/enums/PayChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/enums/PayChannel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/enums/PayStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/enums/PayStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/enums/PayType.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/enums/PayType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/mapper/PayOrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/mapper/PayOrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/service/IPayOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/service/IPayOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/service/impl/PayOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/target/classes/com/hmall/pay/service/impl/PayOrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/TradeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/TradeApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/constants/MQConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/constants/MQConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/dto/OrderFormDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/dto/OrderFormDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/po/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/po/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/po/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/po/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/po/OrderLogistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/po/OrderLogistics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/vo/OrderVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/domain/vo/OrderVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/listener/OrderDelayMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/listener/OrderDelayMessageListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/listener/PayStatusListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/listener/PayStatusListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/mapper/OrderDetailMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/mapper/OrderDetailMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/mapper/OrderLogisticsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/mapper/OrderLogisticsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/mapper/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/IOrderDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/IOrderDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/IOrderLogisticsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/IOrderLogisticsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/IOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/IOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderDetailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderLogisticsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderLogisticsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/config/JwtProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/config/JwtProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/controller/AddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/controller/AddressController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/dto/AddressDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/dto/AddressDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/dto/LoginFormDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/dto/LoginFormDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/po/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/po/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/vo/UserLoginVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/domain/vo/UserLoginVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/enums/UserStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/enums/UserStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/mapper/AddressMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/mapper/AddressMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/IAddressService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/IAddressService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/impl/AddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/impl/AddressServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/util/JwtTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/hmall/user/util/JwtTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +56,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="1a16a719-9b0c-4883-8158-ef21b5d56549" />
+        <option name="activeSessionId" value="48ac5459-7235-4ad6-9f47-56866ab85946" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -266,6 +122,23 @@
             <option name="modeId" value="Agent" />
             <option name="modelType" value="builtin_family" />
             <option name="modelValue" value="gemini-3.1-pro-preview" />
+            <option name="status" value="Stopped" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="d198bf4f-1d4f-4022-92f7-055b8f76f692" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="claude-haiku-4.5" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="48ac5459-7235-4ad6-9f47-56866ab85946" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="claude-haiku-4.5" />
             <option name="status" value="Stopped" />
             <option name="targetType" value="LOCAL" />
           </session>
@@ -360,65 +233,65 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.7715862306143786E-138" />
-      <entry key="S2" value="6.438558389080487E-35" />
-      <entry key="S5" value="6.10595308009245E-14" />
-      <entry key="S10" value="8.145829093552543E-7" />
-      <entry key="S30" value="0.050721251504178395" />
-      <entry key="S60" value="0.8103548885183249" />
-      <entry key="M2" value="3.244087789980474" />
-      <entry key="M5" value="7.463484261179478" />
-      <entry key="M10" value="9.928554023645919" />
-      <entry key="M15" value="11.038247627786559" />
-      <entry key="M30" value="12.53672135910964" />
-      <entry key="H1" value="13.58342339863682" />
-      <entry key="H2" value="14.23323296024366" />
-      <entry key="H4" value="14.60008691933907" />
-      <entry key="D1" value="14.930868387588035" />
-      <entry key="W1" value="14.990060778848086" />
+      <entry key="MS100" value="1.000048893425146" />
+      <entry key="MS500" value="1.1373567771971098" />
+      <entry key="S2" value="1.6087830093314932" />
+      <entry key="S5" value="1.8199455425017899" />
+      <entry key="S10" value="1.9055084441913226" />
+      <entry key="S30" value="1.9674658891664425" />
+      <entry key="S60" value="1.9909242554119682" />
+      <entry key="M2" value="2.1832148030541614" />
+      <entry key="M5" value="3.352518899997903" />
+      <entry key="M10" value="4.602016022143994" />
+      <entry key="M15" value="5.235186634188147" />
+      <entry key="M30" value="6.02568000421524" />
+      <entry key="H1" value="6.714935342245533" />
+      <entry key="H2" value="8.687495523071597" />
+      <entry key="H4" value="12.609560130327939" />
+      <entry key="D1" value="21.15946785093299" />
+      <entry key="W1" value="23.562123020788093" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000257739974" />
-      <entry key="S10" value="1.0002247485861369" />
-      <entry key="S30" value="1.0962913163630017" />
-      <entry key="S60" value="1.438715727425002" />
-      <entry key="M2" value="1.9366454866732745" />
-      <entry key="M5" value="2.4765241992286677" />
-      <entry key="M10" value="2.7184386342223297" />
-      <entry key="M15" value="2.807586427876873" />
-      <entry key="M30" value="2.9013601803224507" />
-      <entry key="H1" value="2.9500563454526336" />
-      <entry key="H2" value="2.974870257623778" />
-      <entry key="H4" value="2.987395399923042" />
-      <entry key="D1" value="2.9978936940615575" />
-      <entry key="W1" value="2.9996989632169533" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="3.4808007465965237E-225" />
+      <entry key="S60" value="8.106839703796343E-113" />
+      <entry key="M2" value="1.4537456405733933E-56" />
+      <entry key="M5" value="8.790587374042E-23" />
+      <entry key="M10" value="1.6195978560295406E-11" />
+      <entry key="M15" value="9.226951559922105E-8" />
+      <entry key="M30" value="5.259739065576667E-4" />
+      <entry key="H1" value="0.03972021472219888" />
+      <entry key="H2" value="0.34519036726404534" />
+      <entry key="H4" value="1.0176256076169816" />
+      <entry key="D1" value="2.505332939677609" />
+      <entry key="W1" value="2.9237608552833474" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1756810003439884E-7" />
-      <entry key="MS500" value="0.0411204539071565" />
-      <entry key="S2" value="0.4503129899239646" />
-      <entry key="S5" value="0.7267847398897286" />
-      <entry key="S10" value="0.852699804537398" />
-      <entry key="S30" value="1.088070535363361" />
-      <entry key="S60" value="2.2020314539416934" />
-      <entry key="M2" value="5.139757305006616" />
-      <entry key="M5" value="9.913840766209734" />
-      <entry key="M10" value="12.63136887694064" />
-      <entry key="M15" value="13.83475360530163" />
-      <entry key="M30" value="15.432174755980657" />
-      <entry key="H1" value="16.530426057397953" />
-      <entry key="H2" value="17.2065498605473" />
-      <entry key="H4" value="17.58669879751768" />
-      <entry key="D1" value="17.928630524006483" />
-      <entry key="W1" value="17.9897409240644" />
+      <entry key="MS100" value="0.9460999169120006" />
+      <entry key="MS500" value="1.1223865836359266" />
+      <entry key="S2" value="1.601599594861571" />
+      <entry key="S5" value="1.8164535526415702" />
+      <entry key="S10" value="1.903636972680152" />
+      <entry key="S30" value="1.966811760268889" />
+      <entry key="S60" value="1.9905903370292357" />
+      <entry key="M2" value="2.1830100550169003" />
+      <entry key="M5" value="3.3523433140752674" />
+      <entry key="M10" value="4.601878016893568" />
+      <entry key="M15" value="5.235077743389789" />
+      <entry key="M30" value="6.026139700823376" />
+      <entry key="H1" value="6.754573161833148" />
+      <entry key="H2" value="9.032462916394243" />
+      <entry key="H4" value="13.626874102799938" />
+      <entry key="D1" value="23.664674877928142" />
+      <entry key="W1" value="26.48586291235994" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="AISelfReview" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -514,14 +387,14 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.customization.CustomizationConfigurable",
     "vue.rearranger.settings.migration": "true",
     "应用程序.ConsultantApplication.executor": "Run"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "redis",
-      "mysql"
+      "mysql",
+      "redis"
     ]
   }
 }]]></component>
@@ -555,10 +428,10 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="AiServiceApplication" value="STOPPED" />
-              <entry key="CartApplication" value="STOPPED" />
-              <entry key="GatewayApplication" value="STOPPED" />
-              <entry key="ItemApplication" value="STOPPED" />
+              <entry key="AiServiceApplication" value="FAILED" />
+              <entry key="CartApplication" value="FAILED" />
+              <entry key="GatewayApplication" value="FAILED" />
+              <entry key="ItemApplication" value="FAILED" />
               <entry key="PayApplication" value="STOPPED" />
               <entry key="TradeApplication" value="STOPPED" />
               <entry key="UserApplication" value="STOPPED" />
@@ -833,7 +706,19 @@
       <workItem from="1779178026591" duration="5053000" />
       <workItem from="1779183129137" duration="5958000" />
       <workItem from="1779191558892" duration="5010000" />
+      <workItem from="1779196792430" duration="126000" />
+      <workItem from="1779196964748" duration="601000" />
+      <workItem from="1779261140722" duration="20409000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
+      <option name="closed" value="true" />
+      <created>1779196897657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779196897657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -865,6 +750,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

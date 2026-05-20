@@ -720,25 +720,20 @@
                 });
             },
             fetchRecommendations(userRequest) {
-                axios.get('/ai-api/recommend/products', {
-                    params: {
-                        memoryId: this.memoryId,
-                        userRequest: userRequest
-                    }
-                }).then(response => {
-                    // 模拟推荐数据
-                    this.recommendations = [
-                        {
-                            name: '推荐商品 1',
-                            reason: '根据你的需求，这款商品性价比极高',
-                            price: '299.00'
-                        },
-                        {
-                            name: '推荐商品 2',
-                            reason: '用户评分最高的同类商品',
-                            price: '399.00'
-                        }
-                    ];
+                axios.get('/ai-api/recommend/items').then(response => {
+                    const items = Array.isArray(response.data) ? response.data : [];
+                    this.recommendations = items.map(item => {
+                        const price = item.price != null ? (item.price / 100).toFixed(2) : '0.00';
+                        const brand = item.brand || '未知';
+                        const category = item.category || '未知';
+                        const sold = item.sold != null ? item.sold : 0;
+                        return {
+                            id: item.id,
+                            name: item.name,
+                            reason: `品牌：${brand} · 类目：${category} · 销量：${sold}`,
+                            price: price
+                        };
+                    });
                     this.loading = false;
                     this.$nextTick(() => {
                         this.$refs.chatMessages.scrollTop = this.$refs.chatMessages.scrollHeight;
@@ -760,21 +755,54 @@
             },
             submitReservation() {
                 this.reservationLoading = true;
-                // 模拟提交预约
-                setTimeout(() => {
-                    alert('预约成功！我们会尽快与你联系。');
-                    this.showReservationModal = false;
-                    this.reservation = {
-                        name: '',
-                        phone: '',
-                        email: '',
-                        date: '',
-                        time: '',
-                        category: '',
-                        notes: ''
-                    };
+
+                // 检查必填字段
+                if (!this.reservation.name || !this.reservation.phone || !this.reservation.date || !this.reservation.time || !this.reservation.category) {
+                    alert('请填写所有必填字段！');
                     this.reservationLoading = false;
-                }, 500);
+                    return;
+                }
+
+                // 构建查询参数对象（不用FormData，直接用params）
+                const params = {
+                    name: this.reservation.name,
+                    phone: this.reservation.phone,
+                    email: this.reservation.email,
+                    date: this.reservation.date,
+                    time: this.reservation.time,
+                    category: this.reservation.category,
+                    notes: this.reservation.notes || ''
+                };
+
+                console.log('提交预约数据:', params);
+
+                // 调用后端 API（使用params方式）
+                axios.post('/reservation/add', null, {params: params})
+                    .then(response => {
+                        console.log('预约响应:', response.data);
+                        if (response.data.success) {
+                            alert(response.data.message);
+                            this.showReservationModal = false;
+                            // 重置表单
+                            this.reservation = {
+                                name: '',
+                                phone: '',
+                                email: '',
+                                date: '',
+                                time: '',
+                                category: '',
+                                notes: ''
+                            };
+                        } else {
+                            alert('错误：' + response.data.message);
+                        }
+                        this.reservationLoading = false;
+                    })
+                    .catch(err => {
+                        console.error('预约失败:', err.response?.data || err.message);
+                        alert('预约失败：' + (err.response?.data?.message || err.message || '请检查网络连接'));
+                        this.reservationLoading = false;
+                    });
             }
         },
         mounted() {

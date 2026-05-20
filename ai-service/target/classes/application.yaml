@@ -1,36 +1,3 @@
-langchain4j:
-  open-ai:
-    chat-model:
-      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api-key: ${BAILIAN_API_KEY}
-      model-name: qwen-plus-2025-09-11
-      log-requests: true
-      log-responses: true
-    streaming-chat-model:
-      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api-key: ${BAILIAN_API_KEY}
-      model-name: qwen-plus-2025-09-11
-      log-requests: true
-      log-responses: true
-    embedding-model:
-      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api-key: ${BAILIAN_API_KEY}
-      model-name: text-embedding-v4
-      log-requests: true
-      log-responses: true
-      max-segments-per-batch: 10  # 最大批量处理数量 (text-embedding-v4最大是10) 这里设置10 即每次处理10个,分多次
-  #langchain4j 的向量数据库的配置 (基于Milvus)
-  community:
-    milvus:
-      host: localhost
-      port: 19530
-      collection-name: embedding_collection
-      dimension: 1024
-
-logging:
-  level:
-    dev.langchain4j: debug
-
 server:
   port: 8087
   error:
@@ -42,26 +9,53 @@ server:
       charset: UTF-8
       force-response: true
 
-# 上下文记忆的配置(redis)
 spring:
   application:
     name: ai-service
-  redis:
-    host: 127.0.0.1
-    port: 6379
-    password: root
-    database: 0
+  ai:
+    openai:
+      api-key: ${BAILIAN_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-plus-2025-09-11
+      embedding:
+        options:
+          model: text-embedding-v4
+    vectorstore:
+      milvus:
+        client:
+          host: localhost
+          port: 19530
+        database-name: default
+        collection-name: hmall_items
+        embedding-dimension: 1536
+        index-type: IVF_FLAT
+        metric-type: COSINE
+    chat:
+      memory:
+        type: redis
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: root
+      database: 0
   datasource:
-    url: jdbc:mysql://localhost:3306/langchain4j?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.88.131:3307/hm-reservation?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    password: 1234
+    password: 123
     driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     nacos:
       server-addr: 192.168.88.131:8848
       discovery:
-        namespace: hmall
-        enabled: false  # Disable Nacos discovery for local development
-mybatis:
+        # namespace: hmall  <-- 暂时注释掉，确保和 item-service 在同一个 public 空间
+        group: DEFAULT_GROUP
+logging:
+  level:
+    com.alibaba.nacos.client.naming: DEBUG
+
+mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true

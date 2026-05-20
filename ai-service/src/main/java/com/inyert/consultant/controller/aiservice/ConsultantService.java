@@ -1,34 +1,38 @@
 package com.inyert.consultant.controller.aiservice;
 
+import com.inyert.consultant.tool.RecommendationTool;
+import com.inyert.consultant.tool.ReservationTool;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
-import dev.langchain4j.service.MemoryId;
-import dev.langchain4j.service.SystemMessage;
-import dev.langchain4j.service.UserMessage;
-import dev.langchain4j.service.spring.AiService;
-import dev.langchain4j.service.spring.AiServiceWiringMode;
-import dev.langchain4j.service.TokenStream;
+@Service
+public class ConsultantService {
 
-//@AiService(
-//        wiringMode = AiServiceWiringMode.EXPLICIT, //手动装配
-//        chatModel = "openAiChatModel" //指定模型
-//)
-//@AiService
+    private final ChatClient chatClient;
 
-@AiService(
-        wiringMode = AiServiceWiringMode.EXPLICIT,
-        chatModel = "openAiChatModel",
-        streamingChatModel = "openAiStreamingChatModel",
-        //chatMemory = "chatMemory"
-        chatMemoryProvider = "chatMemoryProvider", //配置会话记忆提供者对象
-        // contentRetriever = "contentRetriever",   // 注释掉：Milvus 未启动时会导致启动失败
-        tools = {"reservationTool", "recommendationTool"} //配置工具对象
-)
-public interface ConsultantService {
-    @SystemMessage(fromResource = "system.txt")
-//    @UserMessage("这是用户的信息{{msg}},你要回答这个问题，并在最后对这个问题举一反三")
+    public ConsultantService(ChatClient.Builder builder, 
+                             RecommendationTool recommendationTool,
+                             ReservationTool reservationTool,
+                             @Value("classpath:system.txt") Resource systemMessage) {
+        this.chatClient = builder.build();
+        System.out.println("[AI-DEBUG] ChatClient 初始化完成，工具已注册。");
+    }
 
-    //用于聊天的方法
-    //注意：如果添加了@MemoryId注解，chat方法就有了两个参数，一个是MemoryId，
-    // 一个就是用户输入的message，这里要对用户输入的message加上注解@UserMessage
-    public TokenStream chat(@MemoryId String MemoryId, @UserMessage String message);
+    public Flux<String> chat(String memoryId, String message) {
+        System.out.println("[AI-DEBUG] 收到用户消息: " + message);
+        
+        String response = chatClient.prompt()
+                .system(s -> s.text("你是 INYert 电商平台的智能推荐助手。当用户询问商品时，你必须调用 recommendItems 或 getHotItems 工具获取真实数据，严禁自己编造商品信息。"))
+                .user(message)
+                .advisors(a -> a.param("conversation_id", memoryId))
+                .functions("recommendItems", "getHotItems", "insertReservation", "queryReservation")
+                .call()
+                .content();
+        
+        System.out.println("[AI-DEBUG] 模型返回结果: " + response);
+        return Flux.just(response);
+    }
 }

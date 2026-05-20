@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java" value="0037d04f-6a16-469f-b556-df0be7228bf1" />
     <file url="file://$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/mapper/ItemMapper.java" value="0037d04f-6a16-469f-b556-df0be7228bf1" />
   </component>
 </project>

@@ -1,33 +1,47 @@
 package com.inyert.consultant.tool;
 
-import com.inyert.consultant.po.Reservation;
-import com.inyert.consultant.service.ReservationService;
-import dev.langchain4j.agent.tool.P;
-import dev.langchain4j.agent.tool.Tool;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
+import java.util.function.Function;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+
+/**
+ * 志愿预约工具 (Spring AI)
+ */
 @Component
 public class ReservationTool {
 
-    @Autowired
-    private ReservationService reservationService;
-    @Tool("添加志愿指导服务信息")
-    public void insertReservation(
-            @P("考生姓名") String name,
-            @P("考生性别") String gender,
-            @P("考生电话") String phone,
-            @P("沟通时间:格式为yyyy-MM-dd'T'HH:mm") String communicationTime,
-            @P("考生所在省份") String province,
-            @P("考生预估分数") Integer estimatedScore
-    ){
-        reservationService.addReservation(new Reservation(null,name,gender,phone,LocalDateTime.parse(communicationTime),province,estimatedScore));
+    @Bean
+    @Description("添加志愿指导服务信息")
+    public Function<ReservationRequest, Void> insertReservation() {
+        return req -> {
+            System.out.println("添加工具被调用: " + req.name());
+            return null;
+        };
     }
 
-    @Tool("查询志愿指导服务信息")
-    public Reservation queryReservation(@P("考生电话") String phone){
-        return reservationService.queryReservation(phone);
+    @Bean
+    @Description("查询志愿指导服务信息")
+    public Function<QueryRequest, String> queryReservation() {
+        return req -> {
+            return "暂无预约信息";
+        };
     }
+
+    public record ReservationRequest(
+            @com.fasterxml.jackson.annotation.JsonProperty(required = true) @com.fasterxml.jackson.annotation.JsonPropertyDescription("姓名") String name,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = true) @com.fasterxml.jackson.annotation.JsonPropertyDescription("手机号") String phone,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = true) @com.fasterxml.jackson.annotation.JsonPropertyDescription("意向沟通时间") String communicationTime,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = false) @com.fasterxml.jackson.annotation.JsonPropertyDescription("邮箱") String email,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = false) @com.fasterxml.jackson.annotation.JsonPropertyDescription("购物类别") String category,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = false) @com.fasterxml.jackson.annotation.JsonPropertyDescription("备注信息") String notes) {}
+
+    public record QueryRequest(
+            @com.fasterxml.jackson.annotation.JsonProperty(required = true) @com.fasterxml.jackson.annotation.JsonPropertyDescription("手机号") String phone) {}
 }
+
+//TODO 数据添加成功 但是前端仍然提示失败

@@ -1,10 +1,9 @@
+D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\controller\ReservationController.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\service\impl\ProductRecommendationServiceImpl.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\service\impl\ReservationImpl.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\client\ItemClient.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\AiServiceApplication.java
-D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\config\CommonConfig.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\service\ProductRecommendationService.java
-D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\repository\RedisChatMemoryStore.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\controller\aiservice\ConsultantService.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\tool\RecommendationTool.java
 D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert\consultant\po\Reservation.java

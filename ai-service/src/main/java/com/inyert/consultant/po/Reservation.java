@@ -12,9 +12,9 @@ import java.time.LocalDateTime;
 public class Reservation {
     private Long id;
     private String name;
-    private String gender;
     private String phone;
     private LocalDateTime communicationTime;
-    private String province;
-    private Integer estimatedScore;
+    private String email;
+    private String category;
+    private String notes;
 }

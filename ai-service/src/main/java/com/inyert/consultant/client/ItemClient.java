@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Collection;
 import java.util.List;
-
+//TODO  写死了8081
 /**
  * 商品服务调用客户端
  */
-@FeignClient(value = "item-service")
+@FeignClient("item-service")
 public interface ItemClient {
 
     /**
