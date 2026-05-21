@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/tool/ReservationTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" beforeDir="false" afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cart-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cart-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gateway/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gateway/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +20,7 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="35507b47-a7d1-4e57-9284-cb41a644a474" />
+        <option name="activeSessionId" value="48ac5459-7235-4ad6-9f47-56866ab85946" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
@@ -204,23 +208,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000048893425146" />
-      <entry key="MS500" value="1.1373567771971098" />
-      <entry key="S2" value="1.6087830093314932" />
-      <entry key="S5" value="1.8199455425017899" />
-      <entry key="S10" value="1.9055084441913226" />
-      <entry key="S30" value="1.9674658891664425" />
-      <entry key="S60" value="1.9909242554119682" />
-      <entry key="M2" value="2.1832148030541614" />
-      <entry key="M5" value="3.352518899997903" />
-      <entry key="M10" value="4.602016022143994" />
-      <entry key="M15" value="5.235186634188147" />
-      <entry key="M30" value="6.02568000421524" />
-      <entry key="H1" value="6.714935342245533" />
-      <entry key="H2" value="8.687495523071597" />
-      <entry key="H4" value="12.609560130327939" />
-      <entry key="D1" value="21.15946785093299" />
-      <entry key="W1" value="23.562123020788093" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000007907" />
+      <entry key="S2" value="1.0009429703309645" />
+      <entry key="S5" value="1.0616310516935616" />
+      <entry key="S10" value="1.248768620282933" />
+      <entry key="S30" value="2.124754563890682" />
+      <entry key="S60" value="5.099316504920586" />
+      <entry key="M2" value="10.755065444665682" />
+      <entry key="M5" value="18.806976600683008" />
+      <entry key="M10" value="23.609705418073123" />
+      <entry key="M15" value="25.69413396495581" />
+      <entry key="M30" value="28.12924983153834" />
+      <entry key="H1" value="29.721651507697402" />
+      <entry key="H2" value="32.145638732582185" />
+      <entry key="H4" value="36.29665819580367" />
+      <entry key="D1" value="45.092247847098676" />
+      <entry key="W1" value="47.55191629116483" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -228,37 +232,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="3.4808007465965237E-225" />
-      <entry key="S60" value="8.106839703796343E-113" />
-      <entry key="M2" value="1.4537456405733933E-56" />
-      <entry key="M5" value="8.790587374042E-23" />
-      <entry key="M10" value="1.6195978560295406E-11" />
-      <entry key="M15" value="9.226951559922105E-8" />
-      <entry key="M30" value="5.259739065576667E-4" />
-      <entry key="H1" value="0.03972021472219888" />
-      <entry key="H2" value="0.34519036726404534" />
-      <entry key="H4" value="1.0176256076169816" />
-      <entry key="D1" value="2.505332939677609" />
-      <entry key="W1" value="2.9237608552833474" />
+      <entry key="S30" value="2.315475921379972E-227" />
+      <entry key="S60" value="6.611989247747823E-114" />
+      <entry key="M2" value="4.151726172195117E-57" />
+      <entry key="M5" value="5.32493125663271E-23" />
+      <entry key="M10" value="1.2605359859213255E-11" />
+      <entry key="M15" value="7.807109622465445E-8" />
+      <entry key="M30" value="4.8381599031132016E-4" />
+      <entry key="H1" value="0.03809514200291123" />
+      <entry key="H2" value="0.33805524039561696" />
+      <entry key="H4" value="1.0070534679670087" />
+      <entry key="D1" value="2.500976046277824" />
+      <entry key="W1" value="2.9230339476936775" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9460999169120006" />
-      <entry key="MS500" value="1.1223865836359266" />
-      <entry key="S2" value="1.601599594861571" />
-      <entry key="S5" value="1.8164535526415702" />
-      <entry key="S10" value="1.903636972680152" />
-      <entry key="S30" value="1.966811760268889" />
-      <entry key="S60" value="1.9905903370292357" />
-      <entry key="M2" value="2.1830100550169003" />
-      <entry key="M5" value="3.3523433140752674" />
-      <entry key="M10" value="4.601878016893568" />
-      <entry key="M15" value="5.235077743389789" />
-      <entry key="M30" value="6.026139700823376" />
-      <entry key="H1" value="6.754573161833148" />
-      <entry key="H2" value="9.032462916394243" />
-      <entry key="H4" value="13.626874102799938" />
-      <entry key="D1" value="23.664674877928142" />
-      <entry key="W1" value="26.48586291235994" />
+      <entry key="MS100" value="0.9330329915368074" />
+      <entry key="MS500" value="0.9862327044941434" />
+      <entry key="S2" value="0.9974812743444791" />
+      <entry key="S5" value="1.0601944758351491" />
+      <entry key="S10" value="1.2479722293685045" />
+      <entry key="S30" value="2.1242977791216364" />
+      <entry key="S60" value="5.098537944274996" />
+      <entry key="M2" value="10.75402408058167" />
+      <entry key="M5" value="18.806122671217857" />
+      <entry key="M10" value="23.609131671865832" />
+      <entry key="M15" value="25.693706936777694" />
+      <entry key="M30" value="28.129492255824704" />
+      <entry key="H1" value="29.759573971247686" />
+      <entry key="H2" value="32.48342789484467" />
+      <entry key="H4" value="37.303379184904635" />
+      <entry key="D1" value="47.593094154611926" />
+      <entry key="W1" value="50.474928701719584" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -358,7 +362,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "Qoder CN",
     "vue.rearranger.settings.migration": "true",
     "应用程序.ConsultantApplication.executor": "Run"
   },
@@ -680,7 +684,9 @@
       <workItem from="1779196792430" duration="126000" />
       <workItem from="1779196964748" duration="601000" />
       <workItem from="1779261140722" duration="20596000" />
-      <workItem from="1779287287332" duration="338000" />
+      <workItem from="1779287287332" duration="677000" />
+      <workItem from="1779346624393" duration="250000" />
+      <workItem from="1779346904212" duration="3665000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -706,7 +712,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779287341732</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
+      <option name="closed" value="true" />
+      <created>1779287653115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779287653115</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计">
+      <option name="closed" value="true" />
+      <created>1779287874279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779287874279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -779,9 +779,14 @@
                 // 调用后端 API（使用params方式）
                 axios.post('/reservation/add', null, {params: params})
                     .then(response => {
-                        console.log('预约响应:', response.data);
-                        if (response.data.success) {
-                            alert(response.data.message);
+                        // 注意：common.js 中的响应拦截器已经将 response 转换为 response.data
+                        // 所以这里的 response 实际上就是后端返回的 JSON 对象
+                        console.log('预约响应状态:', response.status || 200);
+                        console.log('预约响应数据:', response);
+                        console.log('response.success:', response.success);
+                        
+                        if (response && response.success) {
+                            alert(response.message || '预约成功！');
                             this.showReservationModal = false;
                             // 重置表单
                             this.reservation = {
@@ -794,13 +799,16 @@
                                 notes: ''
                             };
                         } else {
-                            alert('错误：' + response.data.message);
+                            alert('错误：' + (response.message || '未知错误'));
                         }
                         this.reservationLoading = false;
                     })
                     .catch(err => {
-                        console.error('预约失败:', err.response?.data || err.message);
-                        alert('预约失败：' + (err.response?.data?.message || err.message || '请检查网络连接'));
+                        console.error('预约失败完整错误:', err);
+                        console.error('错误响应:', err.response);
+                        console.error('错误数据:', err.response?.data);
+                        const errorMsg = err.response?.data?.message || err.message || '请检查网络连接';
+                        alert('预约失败：' + errorMsg);
                         this.reservationLoading = false;
                     });
             }
