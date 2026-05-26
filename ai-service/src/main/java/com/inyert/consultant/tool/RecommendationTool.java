@@ -24,7 +24,7 @@ public class RecommendationTool {
     private ItemClient itemClient;
 
     @Bean
-    @Description("当用户询问任何具体商品（如手机、衣服）时，必须调用此工具。输入关键词和分类，返回平台真实的商品列表。严禁在没有调用此工具的情况下回答商品推荐问题。")
+    @Description("当用户询问任何具体商品（如手机、衣服）时，必须调用此工具。输入关键词、分类和价格范围，返回平台真实的商品列表。严禁在没有调用此工具的情况下回答商品推荐问题。")
     public Function<RecommendRequest, String> recommendItems() {
         return req -> {
             try {
@@ -48,8 +48,22 @@ public class RecommendationTool {
                 if (items == null || items.isEmpty()) {
                     return "抱歉，根据您的需求暂未找到合适的商品（当前 item-service 可能未启动）。";
                 }
+                
+                // 根据价格范围过滤商品
+                List<ItemDTO> filteredItems = items;
+                if (req.maxPrice() != null && req.maxPrice() > 0) {
+                    final int maxPriceInCents = req.maxPrice() * 100;
+                    filteredItems = items.stream()
+                            .filter(item -> item.getPrice() != null && item.getPrice() <= maxPriceInCents)
+                            .toList();
+                }
+                
+                if (filteredItems.isEmpty()) {
+                    return String.format("抱歉，在%.0f元以内没有找到合适的商品。", req.maxPrice() != null ? req.maxPrice() : 0);
+                }
+                
                 StringBuilder result = new StringBuilder("根据您的需求，为您推荐以下商品：\n");
-                for (ItemDTO item : items) {
+                for (ItemDTO item : filteredItems) {
                     result.append(String.format(
                         "【%s】- 品牌：%s - 价格：¥%.2f - 销量：%d件\n",
                         item.getName(),
@@ -102,7 +116,9 @@ public class RecommendationTool {
             @com.fasterxml.jackson.annotation.JsonProperty(required = true)
             @com.fasterxml.jackson.annotation.JsonPropertyDescription("关键词，如手机、衣服") String keyword,
             @com.fasterxml.jackson.annotation.JsonProperty(required = true)
-            @com.fasterxml.jackson.annotation.JsonPropertyDescription("分类，如电子产品") String category) {}
+            @com.fasterxml.jackson.annotation.JsonPropertyDescription("分类，如电子产品") String category,
+            @com.fasterxml.jackson.annotation.JsonProperty(required = false)
+            @com.fasterxml.jackson.annotation.JsonPropertyDescription("最高价格，单位元，例如700表示700元以内。如果不指定则为null") Integer maxPrice) {}
 
     public record EmptyRequest() {}
 }

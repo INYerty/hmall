@@ -30,24 +30,6 @@
             </PendingDiffInfo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/mapper/ReservationMapper.java" />
-              <option name="originalContent" value="package com.inyert.consultant.mapper;&#10;&#10;&#10;import com.inyert.consultant.po.Reservation;&#10;import org.apache.ibatis.annotations.Insert;&#10;import org.apache.ibatis.annotations.Mapper;&#10;import org.apache.ibatis.annotations.Select;&#10;&#10;@Mapper&#10;public interface ReservationMapper {&#10;    // 添加预约信息&#10;    @Insert(&quot;insert into reservation(name, gender, phone, communication_time, province, estimated_score) values (#{name},#{gender},#{phone},#{communicationTime},#{province},#{estimatedScore})&quot;)&#10;    void insert(Reservation reservation);&#10;&#10;    //根据手机号查询预约信息&#10;    @Select(&quot;select * from reservation where phone = #{phone} order by id desc limit 1&quot;)&#10;    Reservation findByPhone(String phone);&#10;&#10;}&#10;" />
-              <option name="updatedContent" value="package com.inyert.consultant.mapper;&#10;&#10;&#10;import com.inyert.consultant.po.Reservation;&#10;import org.apache.ibatis.annotations.Insert;&#10;import org.apache.ibatis.annotations.Mapper;&#10;import org.apache.ibatis.annotations.Select;&#10;&#10;@Mapper&#10;public interface ReservationMapper {&#10;    // 添加预约信息&#10;    @Insert(&quot;insert into reservation(name, phone, communication_time, email, category, notes) values (#{name},#{phone},#{communicationTime},#{email},#{category},#{notes})&quot;)&#10;    void insert(Reservation reservation);&#10;&#10;    //根据手机号查询预约信息&#10;    @Select(&quot;select * from reservation where phone = #{phone} order by id desc limit 1&quot;)&#10;    Reservation findByPhone(String phone);&#10;&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/po/Reservation.java">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/ai-service/src/main/java/com/inyert/consultant/po/Reservation.java" />
-              <option name="originalContent" value="package com.inyert.consultant.po;&#10;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import java.time.LocalDateTime;&#10;&#10;@Data&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;public class Reservation {&#10;    private Long id;&#10;    private String name;&#10;    private String gender;&#10;    private String phone;&#10;    private LocalDateTime communicationTime;&#10;    private String province;&#10;    private Integer estimatedScore;&#10;}&#10;" />
-              <option name="updatedContent" value="package com.inyert.consultant.po;&#10;&#10;import lombok.AllArgsConstructor;&#10;import lombok.Data;&#10;import lombok.NoArgsConstructor;&#10;&#10;import java.time.LocalDateTime;&#10;&#10;@Data&#10;@NoArgsConstructor&#10;@AllArgsConstructor&#10;public class Reservation {&#10;    private Long id;&#10;    private String name;&#10;    private String phone;&#10;    private LocalDateTime communicationTime;&#10;    private String email;&#10;    private String category;&#10;    private String notes;&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

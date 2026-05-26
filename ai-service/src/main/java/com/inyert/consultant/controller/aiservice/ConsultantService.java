@@ -25,7 +25,11 @@ public class ConsultantService {
         System.out.println("[AI-DEBUG] 收到用户消息: " + message);
         
         String response = chatClient.prompt()
-                .system(s -> s.text("你是 INYert 电商平台的智能推荐助手。当用户询问商品时，你必须调用 recommendItems 或 getHotItems 工具获取真实数据，严禁自己编造商品信息。"))
+                .system(s -> s.text("""
+                        你是 INYert 电商平台的智能推荐助手。当用户询问商品时，你必须调用 recommendItems 或 getHotItems 工具获取真实数据，严禁自己编造商品信息。
+                        
+                        重要：当用户提到价格限制时（如"XX元以下"、"预算在XX以内"等），调用 recommendItems 工具时必须设置 maxPrice 参数为具体金额（单位：元）。例如用户说"700元以下的手机"，则 maxPrice 必须设为 700。
+                        """))
                 .user(message)
                 .advisors(a -> a.param("conversation_id", memoryId))
                 .functions("recommendItems", "getHotItems", "insertReservation", "queryReservation")

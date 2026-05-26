@@ -44,9 +44,27 @@ public class RecommendationController {
      * 获取示例推荐商品列表（用于前端展示）
      */
     @GetMapping("/items")
-    public Mono<List<ItemDTO>> recommendItems() {
-        return Mono.fromCallable(() -> recommendationTool.querySampleItems())
+    public Mono<List<ItemDTO>> recommendItems(@RequestParam(required = false) Integer maxPrice,
+                                              @RequestParam(required = false) Integer minPrice) {
+        return Mono.fromCallable(() -> {
+                    List<ItemDTO> items = recommendationTool.querySampleItems();
+                    if (items == null || items.isEmpty()) {
+                        return items;
+                    }
+                    if (minPrice != null && minPrice > 0) {
+                        final int minPriceInCents = minPrice * 100;
+                        items = items.stream()
+                                .filter(item -> item.getPrice() != null && item.getPrice() >= minPriceInCents)
+                                .toList();
+                    }
+                    if (maxPrice != null && maxPrice > 0) {
+                        final int maxPriceInCents = maxPrice * 100;
+                        items = items.stream()
+                                .filter(item -> item.getPrice() != null && item.getPrice() <= maxPriceInCents)
+                                .toList();
+                    }
+                    return items;
+                })
                 .subscribeOn(Schedulers.boundedElastic());
     }
 }
-
