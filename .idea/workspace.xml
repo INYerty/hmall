@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/lego.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/legosmall.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/天坑专业top10.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/热门专业top20.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西北农林科技大学.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西北大学.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西北工业大学.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西安交通大学.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西安电子科技大学.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/长安大学.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/陕西师范大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" beforeDir="false" afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +201,9 @@
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/org/springframework/security/spring-security-rsa/1.0.9.RELEASE/spring-security-rsa-1.0.9.RELEASE.jar!/org/springframework/security/rsa/crypto/KeyStoreKeyFactory.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/org/springframework/spring-webmvc/5.3.27/spring-webmvc-5.3.27-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java" root0="SKIP_INSPECTION" />
   </component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -230,61 +226,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0002823945781152" />
-      <entry key="MS500" value="1.2030366856392722" />
-      <entry key="S2" value="2.37333403841144" />
-      <entry key="S5" value="3.8335411514729962" />
-      <entry key="S10" value="4.868537630082268" />
-      <entry key="S30" value="6.483343523939567" />
-      <entry key="S60" value="9.550331775280753" />
-      <entry key="M2" value="15.264728953147031" />
-      <entry key="M5" value="23.487133748630676" />
-      <entry key="M10" value="28.412797287823214" />
-      <entry key="M15" value="30.552155200617864" />
-      <entry key="M30" value="33.05200547261402" />
-      <entry key="H1" value="34.68098766798566" />
-      <entry key="H2" value="37.123764320965265" />
-      <entry key="H4" value="41.2844037473046" />
-      <entry key="D1" value="50.08974052909495" />
-      <entry key="W1" value="52.55153953204124" />
+      <entry key="MS100" value="1.0000000000094684" />
+      <entry key="MS500" value="1.0062844936663577" />
+      <entry key="S2" value="1.393650585904588" />
+      <entry key="S5" value="2.4287944759269786" />
+      <entry key="S10" value="3.665900560847485" />
+      <entry key="S30" value="5.466396179295575" />
+      <entry key="S60" value="6.159651391009493" />
+      <entry key="M2" value="6.5593436376982295" />
+      <entry key="M5" value="6.891433857372088" />
+      <entry key="M10" value="8.52806010669173" />
+      <entry key="M15" value="12.072080430566896" />
+      <entry key="M30" value="24.899671667987405" />
+      <entry key="H1" value="42.012397601762416" />
+      <entry key="H2" value="57.54414515716596" />
+      <entry key="H4" value="70.32134029796521" />
+      <entry key="D1" value="88.65260369774357" />
+      <entry key="W1" value="93.18703461166123" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.9886766984045594E-227" />
-      <entry key="S60" value="6.1276520515001476E-114" />
-      <entry key="M2" value="3.996774821783388E-57" />
-      <entry key="M5" value="5.244527863718646E-23" />
-      <entry key="M10" value="1.2509831045746981E-11" />
-      <entry key="M15" value="7.767615887647666E-8" />
-      <entry key="M30" value="4.825907015912825E-4" />
-      <entry key="H1" value="0.03804687247532171" />
-      <entry key="H2" value="0.33784100128080835" />
-      <entry key="H4" value="1.0067343123809085" />
-      <entry key="D1" value="2.5008439271924385" />
-      <entry key="W1" value="2.923011887888213" />
+      <entry key="MS100" value="4.464085672474997E-134" />
+      <entry key="MS500" value="2.1376987542497414E-27" />
+      <entry key="S2" value="2.1502384624057986E-7" />
+      <entry key="S5" value="0.0021527552171940263" />
+      <entry key="S10" value="0.046397793236252365" />
+      <entry key="S30" value="0.3593346590481372" />
+      <entry key="S60" value="0.5994452927901799" />
+      <entry key="M2" value="0.7742390558945041" />
+      <entry key="M5" value="0.9083158989202194" />
+      <entry key="M10" value="1.0782275012421751" />
+      <entry key="M15" value="1.3320056778445957" />
+      <entry key="M30" value="2.0289785840283994" />
+      <entry key="H1" value="2.77918107151404" />
+      <entry key="H2" value="3.5261904753523283" />
+      <entry key="H4" value="4.450367993310883" />
+      <entry key="D1" value="6.352738819049045" />
+      <entry key="W1" value="6.899576760655837" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9463121549698472" />
-      <entry key="MS500" value="1.1878631301705596" />
-      <entry key="S2" value="2.3585725735091376" />
-      <entry key="S5" value="3.8184461985049816" />
-      <entry key="S10" value="4.857571870161623" />
-      <entry key="S30" value="6.478449971212578" />
-      <entry key="S60" value="9.547208291421349" />
-      <entry key="M2" value="15.262485541529404" />
-      <entry key="M5" value="23.485786481568248" />
-      <entry key="M10" value="28.411973105686535" />
-      <entry key="M15" value="30.551560104098243" />
-      <entry key="M30" value="33.05216198196207" />
-      <entry key="H1" value="34.71881938354904" />
-      <entry key="H2" value="37.46131805240767" />
-      <entry key="H4" value="42.29079500309725" />
-      <entry key="D1" value="52.59045294345468" />
-      <entry key="W1" value="55.474529628525694" />
+      <entry key="MS100" value="0.021196942616684804" />
+      <entry key="MS500" value="0.46583169243998857" />
+      <entry key="S2" value="1.1533785896583415" />
+      <entry key="S5" value="2.2480579416513975" />
+      <entry key="S10" value="3.5612644232019925" />
+      <entry key="S30" value="5.733872635201238" />
+      <entry key="S60" value="6.70210506684036" />
+      <entry key="M2" value="7.301423397803367" />
+      <entry key="M5" value="7.785613223620147" />
+      <entry key="M10" value="9.596850665559264" />
+      <entry key="M15" value="13.39503732920512" />
+      <entry key="M30" value="26.920194419108093" />
+      <entry key="H1" value="44.78519739067006" />
+      <entry key="H2" value="61.066221396054004" />
+      <entry key="H4" value="74.76922754897257" />
+      <entry key="D1" value="95.00481092298928" />
+      <entry key="W1" value="100.08653092273981" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -318,93 +314,94 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ConsultantApplicationTests.contextLoads.executor": "Run",
-    "JUnit.ElasticDocumentTest.executor": "Run",
-    "JUnit.ElasticDocumentTest.testAddDocsToIndex.executor": "Run",
-    "JUnit.ElasticDocumentTest.testBulkDoc.executor": "Run",
-    "JUnit.ElasticDocumentTest.testConnection.executor": "Run",
-    "JUnit.ElasticDocumentTest.testDeleteDocsFromIndex.executor": "Run",
-    "JUnit.ElasticDocumentTest.testGetDocsFromIndex.executor": "Run",
-    "JUnit.ElasticDocumentTest.testUpdateDocument.executor": "Run",
-    "JUnit.ElasticIndexTest.testCreateIndex.executor": "Run",
-    "JUnit.ElasticIndexTest.testDeleteIndex.executor": "Run",
-    "JUnit.ElasticSearchTest.boolHighlight.executor": "Run",
-    "JUnit.ElasticSearchTest.boolSearchAndHighlight.executor": "Run",
-    "JUnit.ElasticSearchTest.executor": "Run",
-    "JUnit.ElasticSearchTest.matchAll.executor": "Run",
-    "JUnit.ElasticSearchTest.mutiMatchQuery.executor": "Run",
-    "JUnit.ElasticSearchTest.testAggs.executor": "Run",
-    "JUnit.ElasticSearchTest.testConnection.executor": "Run",
-    "JUnit.ElasticSearchTest.testQueryPageSort.executor": "Run",
-    "JUnit.ElasticSearchTest.testRestClientForSearch.executor": "Run",
-    "JUnit.ElasticTest.testConnection.executor": "Run",
-    "JUnit.ElasticTest.testCreateIndex.executor": "Run",
-    "JUnit.ElasticTest.testDeleteIndex.executor": "Run",
-    "JUnit.ElasticTest.testGetIndex.executor": "Run",
-    "JUnit.ReservationServiceTest.executor": "Run",
-    "JUnit.ReservationServiceTest.testFindByPhone.executor": "Run",
-    "JUnit.ReservationServiceTest.testInsert.executor": "Run",
-    "Maven.ai-service [clean].executor": "Run",
-    "Maven.ai-service [compile].executor": "Run",
-    "Maven.hmall [clean].executor": "Run",
-    "Maven.hmall [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "发现新的/更新的数据库配置",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AiServiceApplication.executor": "Run",
-    "Spring Boot.CartApplication.executor": "Run",
-    "Spring Boot.ConsultantApplication.executor": "Debug",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.HMallApplication.executor": "Run",
-    "Spring Boot.ItemApplication.executor": "Run",
-    "Spring Boot.ItemApplication2.executor": "Run",
-    "Spring Boot.PayApplication.executor": "Run",
-    "Spring Boot.TradeApplication.executor": "Run",
-    "Spring Boot.UserApplication.executor": "Run",
-    "StatusDashboardGroupingRule": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaSelfLearn/hmall/ai-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.ConsultantApplication.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ConsultantApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.testAddDocsToIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.testBulkDoc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.testDeleteDocsFromIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.testGetDocsFromIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticDocumentTest.testUpdateDocument.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticIndexTest.testCreateIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticIndexTest.testDeleteIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.boolHighlight.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.boolSearchAndHighlight.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.matchAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.mutiMatchQuery.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.testAggs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.testQueryPageSort.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticSearchTest.testRestClientForSearch.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticTest.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticTest.testCreateIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticTest.testDeleteIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElasticTest.testGetIndex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServiceTest.testFindByPhone.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReservationServiceTest.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ai-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hmall [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hmall [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;发现新的/更新的数据库配置&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AiServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConsultantApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ItemApplication2.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TradeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;StatusDashboardGroupingRule&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaSelfLearn/hmall/hmall-nginx/html/hmall-portal/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.ConsultantApplication.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaSelfLearn\hmall\hmall-nginx\html\hmall-portal\img" />
       <recent name="D:\JavaSelfLearn\hmall\ai-service\src\main\resources" />
       <recent name="D:\JavaSelfLearn\hmall\ai-service\src\test\java" />
       <recent name="D:\JavaSelfLearn\hmall\ai-service\src\main\java\com\inyert" />
       <recent name="D:\JavaSelfLearn\hmall\trade-service\src\main\resources" />
-      <recent name="D:\JavaSelfLearn\hmall\pay-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hmall.item.es" />
@@ -425,6 +422,13 @@
     </option>
     <option name="configurationStatuses">
       <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="generated-requests | #3" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
@@ -442,18 +446,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AiServiceApplication">
-    <configuration name="AiServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.inyert.consultant.AiServiceApplication" />
-      <module name="ai-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.inyert.consultant.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#3" index="3" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="ConsultantApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ai-service" />
@@ -609,6 +603,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.generated-requests | #3" />
       <item itemvalue="JUnit.ConsultantApplicationTests.contextLoads" />
       <item itemvalue="JUnit.ReservationServiceTest" />
       <item itemvalue="JUnit.ReservationServiceTest.testFindByPhone" />
@@ -616,20 +611,19 @@
       <item itemvalue="Spring Boot.AiServiceApplication" />
       <item itemvalue="Spring Boot.CartApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ItemApplication2" />
       <item itemvalue="Spring Boot.ItemApplication" />
       <item itemvalue="Spring Boot.PayApplication" />
-      <item itemvalue="Spring Boot.ItemApplication2" />
       <item itemvalue="Spring Boot.TradeApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="应用程序.AiServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.generated-requests | #3" />
         <item itemvalue="JUnit.ReservationServiceTest.testInsert" />
         <item itemvalue="JUnit.ConsultantApplicationTests.contextLoads" />
         <item itemvalue="JUnit.ReservationServiceTest" />
         <item itemvalue="JUnit.ReservationServiceTest.testFindByPhone" />
-        <item itemvalue="应用程序.AiServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -716,7 +710,7 @@
       <workItem from="1779783285132" duration="10924000" />
       <workItem from="1779799251562" duration="2633000" />
       <workItem from="1781429919231" duration="189000" />
-      <workItem from="1781591281195" duration="8913000" />
+      <workItem from="1781591281195" duration="13367000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -782,7 +776,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781430060554</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置">
+      <option name="closed" value="true" />
+      <created>1781609107329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1781609107329</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

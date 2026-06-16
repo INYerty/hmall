@@ -1,0 +1,11 @@
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\dto\OrderDetailDTO.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\UserClient.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\ItemClient.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\falback\PayClientFallback.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\dto\ItemDTO.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\CartClient.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\PayClient.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\config\DefaultFeignConfig.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\dto\PayOrderDTO.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\falback\ItemClientFallbackFactory.java
+D:\JavaSelfLearn\hmall\hm-api\src\main\java\com\hmall\api\client\TradeClient.java
