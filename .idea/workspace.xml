@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="fix(ai-consultant): 优化AI顾问的商品推荐和前端交互体验&#10;&#10;- 重构商品卡片样式，提升视觉效果和用户体验&#10;- 实现价格区间过滤功能，支持用户按预算筛选商品&#10;- 优化商品详情展示，添加品牌、分类、销量等元数据&#10;- 改进错误处理和加载状态管理&#10;- 集成真实的商品数据获取，替换模拟数据&#10;- 优化移动端适配和响应式布局&#10;- 添加空状态提示和加载动画效果">
+    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/天坑专业top10.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/热门专业top20.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西北农林科技大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西北大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西北工业大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西安交通大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/西安电子科技大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/长安大学.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/content/陕西师范大学.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +156,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="646" />
+    <option name="cachedIndexableFilesCount" value="635" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -281,6 +290,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="AISelfReview" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -306,86 +318,86 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ConsultantApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.testAddDocsToIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.testBulkDoc.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.testConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.testDeleteDocsFromIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.testGetDocsFromIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticDocumentTest.testUpdateDocument.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticIndexTest.testCreateIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticIndexTest.testDeleteIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.boolHighlight.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.boolSearchAndHighlight.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.matchAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.mutiMatchQuery.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.testAggs.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.testConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.testQueryPageSort.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticSearchTest.testRestClientForSearch.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticTest.testConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticTest.testCreateIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticTest.testDeleteIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ElasticTest.testGetIndex.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationServiceTest.testFindByPhone.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReservationServiceTest.testInsert.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ai-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ai-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.hmall [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.hmall [compile].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;发现新的/更新的数据库配置&quot;,
-    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AiServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConsultantApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ItemApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ItemApplication2.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TradeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
-    &quot;StatusDashboardGroupingRule&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaSelfLearn/hmall/ai-service/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Qoder CN&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.ConsultantApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ConsultantApplicationTests.contextLoads.executor": "Run",
+    "JUnit.ElasticDocumentTest.executor": "Run",
+    "JUnit.ElasticDocumentTest.testAddDocsToIndex.executor": "Run",
+    "JUnit.ElasticDocumentTest.testBulkDoc.executor": "Run",
+    "JUnit.ElasticDocumentTest.testConnection.executor": "Run",
+    "JUnit.ElasticDocumentTest.testDeleteDocsFromIndex.executor": "Run",
+    "JUnit.ElasticDocumentTest.testGetDocsFromIndex.executor": "Run",
+    "JUnit.ElasticDocumentTest.testUpdateDocument.executor": "Run",
+    "JUnit.ElasticIndexTest.testCreateIndex.executor": "Run",
+    "JUnit.ElasticIndexTest.testDeleteIndex.executor": "Run",
+    "JUnit.ElasticSearchTest.boolHighlight.executor": "Run",
+    "JUnit.ElasticSearchTest.boolSearchAndHighlight.executor": "Run",
+    "JUnit.ElasticSearchTest.executor": "Run",
+    "JUnit.ElasticSearchTest.matchAll.executor": "Run",
+    "JUnit.ElasticSearchTest.mutiMatchQuery.executor": "Run",
+    "JUnit.ElasticSearchTest.testAggs.executor": "Run",
+    "JUnit.ElasticSearchTest.testConnection.executor": "Run",
+    "JUnit.ElasticSearchTest.testQueryPageSort.executor": "Run",
+    "JUnit.ElasticSearchTest.testRestClientForSearch.executor": "Run",
+    "JUnit.ElasticTest.testConnection.executor": "Run",
+    "JUnit.ElasticTest.testCreateIndex.executor": "Run",
+    "JUnit.ElasticTest.testDeleteIndex.executor": "Run",
+    "JUnit.ElasticTest.testGetIndex.executor": "Run",
+    "JUnit.ReservationServiceTest.executor": "Run",
+    "JUnit.ReservationServiceTest.testFindByPhone.executor": "Run",
+    "JUnit.ReservationServiceTest.testInsert.executor": "Run",
+    "Maven.ai-service [clean].executor": "Run",
+    "Maven.ai-service [compile].executor": "Run",
+    "Maven.hmall [clean].executor": "Run",
+    "Maven.hmall [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "发现新的/更新的数据库配置",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AiServiceApplication.executor": "Run",
+    "Spring Boot.CartApplication.executor": "Run",
+    "Spring Boot.ConsultantApplication.executor": "Debug",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.HMallApplication.executor": "Run",
+    "Spring Boot.ItemApplication.executor": "Run",
+    "Spring Boot.ItemApplication2.executor": "Run",
+    "Spring Boot.PayApplication.executor": "Run",
+    "Spring Boot.TradeApplication.executor": "Run",
+    "Spring Boot.UserApplication.executor": "Run",
+    "StatusDashboardGroupingRule": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JavaSelfLearn/hmall/ai-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.ConsultantApplication.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaSelfLearn\hmall\ai-service\src\main\resources" />
@@ -624,8 +636,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
       </set>
     </attachedChunks>
   </component>
@@ -703,6 +715,8 @@
       <workItem from="1779690646170" duration="962000" />
       <workItem from="1779783285132" duration="10924000" />
       <workItem from="1779799251562" duration="2633000" />
+      <workItem from="1781429919231" duration="189000" />
+      <workItem from="1781591281195" duration="8913000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -760,7 +774,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779790661388</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置">
+      <option name="closed" value="true" />
+      <created>1781430060554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1781430060554</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -798,7 +820,8 @@
     <MESSAGE value="feat(ai): 完善AI顾问系统功能实现&#10;&#10;- 替换langchain4j配置为Spring AI配置，统一AI服务集成方式&#10;- 实现真实的商品推荐功能，从后端获取真实商品数据而非模拟数据&#10;- 完善预约功能，添加表单验证和后端API调用逻辑&#10;- 更新AI服务配置，调整向量数据库和Redis连接参数&#10;- 重构AI服务接口，使用Spring AI的ChatClient替代langchain4j的AiService&#10;- 删除过时的CommonConfig配置类，简化项目配置结构&#10;- 更新Nginx配置中的API请求路径以匹配新的后端接口设计" />
     <MESSAGE value="fix(ai-consultant): 优化预约功能的错误处理和响应解析&#10;&#10;- 修复了前端响应解析逻辑，适配common.js中的响应拦截器转换&#10;- 添加了更详细的错误日志记录和调试信息&#10;- 优化了错误消息显示，增加默认错误提示&#10;- 改进了预约成功的提示信息和表单重置逻辑&#10;- 移除了临时的日志文件和IDE配置文件&#10;- 修复了预约功能中的潜在空指针异常" />
     <MESSAGE value="fix(ai-consultant): 优化AI顾问的商品推荐和前端交互体验&#10;&#10;- 重构商品卡片样式，提升视觉效果和用户体验&#10;- 实现价格区间过滤功能，支持用户按预算筛选商品&#10;- 优化商品详情展示，添加品牌、分类、销量等元数据&#10;- 改进错误处理和加载状态管理&#10;- 集成真实的商品数据获取，替换模拟数据&#10;- 优化移动端适配和响应式布局&#10;- 添加空状态提示和加载动画效果" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(ai-consultant): 优化AI顾问的商品推荐和前端交互体验&#10;&#10;- 重构商品卡片样式，提升视觉效果和用户体验&#10;- 实现价格区间过滤功能，支持用户按预算筛选商品&#10;- 优化商品详情展示，添加品牌、分类、销量等元数据&#10;- 改进错误处理和加载状态管理&#10;- 集成真实的商品数据获取，替换模拟数据&#10;- 优化移动端适配和响应式布局&#10;- 添加空状态提示和加载动画效果" />
+    <MESSAGE value="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
