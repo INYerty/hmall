@@ -35,7 +35,7 @@ public class ItemClientFallbackFactory implements FallbackFactory<ItemClient> {
             @Override
             public void restoreStock(List<OrderDetailDTO> items) {
                 log.info("恢复库存失败", cause);
-                 throw new RuntimeException("恢复库存失败");
+                throw new RuntimeException("恢复库存失败");
             }
         };
     }
