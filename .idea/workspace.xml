@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置">
-      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/lego.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/legosmall.png" afterDir="false" />
+    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" beforeDir="false" afterPath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/falback/ItemClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/falback/ItemClientFallbackFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="635" />
+    <option name="cachedIndexableFilesCount" value="628" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -180,6 +178,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11-sources.jar!/cn/hutool/jwt/signers/JWTSigner.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11-sources.jar!/cn/hutool/jwt/signers/JWTSignerUtil.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/com/alibaba/cloud/spring-cloud-starter-alibaba-nacos-config/2021.0.4.0/spring-cloud-starter-alibaba-nacos-config-2021.0.4.0-sources.jar!/com/alibaba/cloud/nacos/NacosConfigManager.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/com/alibaba/cloud/spring-cloud-starter-alibaba-nacos-config/2021.0.4.0/spring-cloud-starter-alibaba-nacos-config-2021.0.4.0.jar!/com/alibaba/cloud/nacos/NacosConfigManager.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/com/alibaba/cloud/spring-cloud-starter-alibaba-nacos-config/2021.0.4.0/spring-cloud-starter-alibaba-nacos-config-2021.0.4.0.jar!/com/alibaba/cloud/nacos/NacosConfigProperties.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../apache-maven-3.9.11-bin/apache-maven-3.9.11/mvn_repo/com/alibaba/nacos/nacos-client/2.0.4/nacos-client-2.0.4-sources.jar!/com/alibaba/nacos/api/config/ConfigService.java" root0="SKIP_INSPECTION" />
@@ -226,61 +225,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000094684" />
-      <entry key="MS500" value="1.0062844936663577" />
-      <entry key="S2" value="1.393650585904588" />
-      <entry key="S5" value="2.4287944759269786" />
-      <entry key="S10" value="3.665900560847485" />
-      <entry key="S30" value="5.466396179295575" />
-      <entry key="S60" value="6.159651391009493" />
-      <entry key="M2" value="6.5593436376982295" />
-      <entry key="M5" value="6.891433857372088" />
-      <entry key="M10" value="8.52806010669173" />
-      <entry key="M15" value="12.072080430566896" />
-      <entry key="M30" value="24.899671667987405" />
-      <entry key="H1" value="42.012397601762416" />
-      <entry key="H2" value="57.54414515716596" />
-      <entry key="H4" value="70.32134029796521" />
-      <entry key="D1" value="88.65260369774357" />
-      <entry key="W1" value="93.18703461166123" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000004386791748" />
+      <entry key="S60" value="1.002641904035006" />
+      <entry key="M2" value="1.2171105118270313" />
+      <entry key="M5" value="4.55338313031456" />
+      <entry key="M10" value="11.369277383109967" />
+      <entry key="M15" value="17.231315765834164" />
+      <entry key="M30" value="32.52899776212153" />
+      <entry key="H1" value="53.53117328926744" />
+      <entry key="H2" value="74.05421473949716" />
+      <entry key="H4" value="90.94467298283145" />
+      <entry key="D1" value="114.32433989559068" />
+      <entry key="W1" value="119.98800234927175" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.464085672474997E-134" />
-      <entry key="MS500" value="2.1376987542497414E-27" />
-      <entry key="S2" value="2.1502384624057986E-7" />
-      <entry key="S5" value="0.0021527552171940263" />
-      <entry key="S10" value="0.046397793236252365" />
-      <entry key="S30" value="0.3593346590481372" />
-      <entry key="S60" value="0.5994452927901799" />
-      <entry key="M2" value="0.7742390558945041" />
-      <entry key="M5" value="0.9083158989202194" />
-      <entry key="M10" value="1.0782275012421751" />
-      <entry key="M15" value="1.3320056778445957" />
-      <entry key="M30" value="2.0289785840283994" />
-      <entry key="H1" value="2.77918107151404" />
-      <entry key="H2" value="3.5261904753523283" />
-      <entry key="H4" value="4.450367993310883" />
-      <entry key="D1" value="6.352738819049045" />
-      <entry key="W1" value="6.899576760655837" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.020827739007417E-247" />
+      <entry key="S5" value="1.598015491194846E-99" />
+      <entry key="S10" value="3.9975185943217845E-50" />
+      <entry key="S30" value="3.4192445563967814E-17" />
+      <entry key="S60" value="5.84743068056251E-9" />
+      <entry key="M2" value="7.646854717831111E-5" />
+      <entry key="M5" value="0.022702831279084047" />
+      <entry key="M10" value="0.17046371834499846" />
+      <entry key="M15" value="0.3894518560425052" />
+      <entry key="M30" value="1.0971128808176498" />
+      <entry key="H1" value="2.0436370550844134" />
+      <entry key="H2" value="3.0237733199704673" />
+      <entry key="H4" value="4.121142719881351" />
+      <entry key="D1" value="6.271883109769678" />
+      <entry key="W1" value="6.8869626872238" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.021196942616684804" />
-      <entry key="MS500" value="0.46583169243998857" />
-      <entry key="S2" value="1.1533785896583415" />
-      <entry key="S5" value="2.2480579416513975" />
-      <entry key="S10" value="3.5612644232019925" />
-      <entry key="S30" value="5.733872635201238" />
-      <entry key="S60" value="6.70210506684036" />
-      <entry key="M2" value="7.301423397803367" />
-      <entry key="M5" value="7.785613223620147" />
-      <entry key="M10" value="9.596850665559264" />
-      <entry key="M15" value="13.39503732920512" />
-      <entry key="M30" value="26.920194419108093" />
-      <entry key="H1" value="44.78519739067006" />
-      <entry key="H2" value="61.066221396054004" />
-      <entry key="H4" value="74.76922754897257" />
-      <entry key="D1" value="95.00481092298928" />
-      <entry key="W1" value="100.08653092273981" />
+      <entry key="MS100" value="0.9395227492140118" />
+      <entry key="MS500" value="0.9876008614453725" />
+      <entry key="S2" value="0.9968856972203758" />
+      <entry key="S5" value="0.9987531130852756" />
+      <entry key="S10" value="0.9993763620805105" />
+      <entry key="S30" value="0.9997925148224884" />
+      <entry key="S60" value="1.0025339602298962" />
+      <entry key="M2" value="1.2169766602085286" />
+      <entry key="M5" value="4.574850317361962" />
+      <entry key="M10" value="11.537182955665259" />
+      <entry key="M15" value="17.617160038214273" />
+      <entry key="M30" value="33.62088390421431" />
+      <entry key="H1" value="55.569735245615966" />
+      <entry key="H2" value="77.07425294809289" />
+      <entry key="H4" value="95.06341074788577" />
+      <entry key="D1" value="120.59567961679564" />
+      <entry key="W1" value="126.87488206732036" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -384,7 +383,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.ConsultantApplication.executor&quot;: &quot;Run&quot;
   },
@@ -711,6 +710,11 @@
       <workItem from="1779799251562" duration="2633000" />
       <workItem from="1781429919231" duration="189000" />
       <workItem from="1781591281195" duration="13367000" />
+      <workItem from="1781613836153" duration="545000" />
+      <workItem from="1781682477699" duration="10103000" />
+      <workItem from="1781695822367" duration="9570000" />
+      <workItem from="1781748381601" duration="92000" />
+      <workItem from="1781748500214" duration="1430000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -784,7 +788,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781609107329</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台">
+      <option name="closed" value="true" />
+      <created>1781614193999</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1781614193999</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -823,7 +835,8 @@
     <MESSAGE value="fix(ai-consultant): 优化预约功能的错误处理和响应解析&#10;&#10;- 修复了前端响应解析逻辑，适配common.js中的响应拦截器转换&#10;- 添加了更详细的错误日志记录和调试信息&#10;- 优化了错误消息显示，增加默认错误提示&#10;- 改进了预约成功的提示信息和表单重置逻辑&#10;- 移除了临时的日志文件和IDE配置文件&#10;- 修复了预约功能中的潜在空指针异常" />
     <MESSAGE value="fix(ai-consultant): 优化AI顾问的商品推荐和前端交互体验&#10;&#10;- 重构商品卡片样式，提升视觉效果和用户体验&#10;- 实现价格区间过滤功能，支持用户按预算筛选商品&#10;- 优化商品详情展示，添加品牌、分类、销量等元数据&#10;- 改进错误处理和加载状态管理&#10;- 集成真实的商品数据获取，替换模拟数据&#10;- 优化移动端适配和响应式布局&#10;- 添加空状态提示和加载动画效果" />
     <MESSAGE value="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置" />
+    <MESSAGE value="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
