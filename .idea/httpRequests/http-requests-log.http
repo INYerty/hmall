@@ -1,3 +1,19 @@
+GET http://localhost:8087/recommend/products?memoryId=IxVZtIh7&userRequest=OZcTntat
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:8087/recommend/products?memoryId=jQ2iSPxh&userRequest=1P7zZp1V
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-18T161509.500.json
+
+###
+
 GET http://localhost:8087/recommend/products?memoryId=TDB2ugMR&userRequest=BCBQFJhu
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.3
 Accept-Encoding: br, deflate, gzip, x-gzip

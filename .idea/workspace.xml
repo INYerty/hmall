@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台">
+    <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="style(workspace): 更新IDEA工作区配置和缓存设置&#10;&#10;- 调整变更列表注释从删除文档改为更新网站标题和图标&#10;- 更新索引文件计数从635减少到628&#10;- 添加Nacos配置管理器跳过检查设置&#10;- 重置代码完成特性统计数值&#10;- 更改设置编辑器选中配置从同步设置为外观主题&#10;- 添加新的工作时间记录条目&#10;- 更新最后提交消息内容&#10;- 增加本地任务计数器到11">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/falback/ItemClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/falback/ItemClientFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +149,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="628" />
+    <option name="cachedIndexableFilesCount" value="634" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -225,61 +227,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000004386791748" />
-      <entry key="S60" value="1.002641904035006" />
-      <entry key="M2" value="1.2171105118270313" />
-      <entry key="M5" value="4.55338313031456" />
-      <entry key="M10" value="11.369277383109967" />
-      <entry key="M15" value="17.231315765834164" />
-      <entry key="M30" value="32.52899776212153" />
-      <entry key="H1" value="53.53117328926744" />
-      <entry key="H2" value="74.05421473949716" />
-      <entry key="H4" value="90.94467298283145" />
-      <entry key="D1" value="114.32433989559068" />
-      <entry key="W1" value="119.98800234927175" />
+      <entry key="MS100" value="1.0119255151620803" />
+      <entry key="MS500" value="1.4908181851709705" />
+      <entry key="S2" value="2.737187238036518" />
+      <entry key="S5" value="3.7434769693114696" />
+      <entry key="S10" value="4.690282611993053" />
+      <entry key="S30" value="9.273546372565326" />
+      <entry key="S60" value="13.542308243632501" />
+      <entry key="M2" value="17.177114476670923" />
+      <entry key="M5" value="22.771105113955894" />
+      <entry key="M10" value="30.339378796718673" />
+      <entry key="M15" value="36.51887194910623" />
+      <entry key="M30" value="52.20907499890294" />
+      <entry key="H1" value="73.55392466033217" />
+      <entry key="H2" value="94.41050765586802" />
+      <entry key="H4" value="111.55902294289886" />
+      <entry key="D1" value="135.2453613183315" />
+      <entry key="W1" value="140.9762111448756" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.020827739007417E-247" />
-      <entry key="S5" value="1.598015491194846E-99" />
-      <entry key="S10" value="3.9975185943217845E-50" />
-      <entry key="S30" value="3.4192445563967814E-17" />
-      <entry key="S60" value="5.84743068056251E-9" />
-      <entry key="M2" value="7.646854717831111E-5" />
-      <entry key="M5" value="0.022702831279084047" />
-      <entry key="M10" value="0.17046371834499846" />
-      <entry key="M15" value="0.3894518560425052" />
-      <entry key="M30" value="1.0971128808176498" />
-      <entry key="H1" value="2.0436370550844134" />
-      <entry key="H2" value="3.0237733199704673" />
-      <entry key="H4" value="4.121142719881351" />
-      <entry key="D1" value="6.271883109769678" />
-      <entry key="W1" value="6.8869626872238" />
+      <entry key="S2" value="1.9256914693567893E-259" />
+      <entry key="S5" value="3.2646353776843386E-104" />
+      <entry key="S10" value="1.8068302016748363E-52" />
+      <entry key="S30" value="5.6533487879101E-18" />
+      <entry key="S60" value="2.377677183284714E-9" />
+      <entry key="M2" value="4.87614647771794E-5" />
+      <entry key="M5" value="0.018963460144103206" />
+      <entry key="M10" value="0.1557940037311118" />
+      <entry key="M15" value="0.36677492065035827" />
+      <entry key="M30" value="1.064692613118332" />
+      <entry key="H1" value="2.0132153457351687" />
+      <entry key="H2" value="3.00118289450309" />
+      <entry key="H4" value="4.10571945675621" />
+      <entry key="D1" value="6.267964937159919" />
+      <entry key="W1" value="6.88634789041458" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395227492140118" />
-      <entry key="MS500" value="0.9876008614453725" />
-      <entry key="S2" value="0.9968856972203758" />
-      <entry key="S5" value="0.9987531130852756" />
-      <entry key="S10" value="0.9993763620805105" />
-      <entry key="S30" value="0.9997925148224884" />
-      <entry key="S60" value="1.0025339602298962" />
-      <entry key="M2" value="1.2169766602085286" />
-      <entry key="M5" value="4.574850317361962" />
-      <entry key="M10" value="11.537182955665259" />
-      <entry key="M15" value="17.617160038214273" />
-      <entry key="M30" value="33.62088390421431" />
-      <entry key="H1" value="55.569735245615966" />
-      <entry key="H2" value="77.07425294809289" />
-      <entry key="H4" value="95.06341074788577" />
-      <entry key="D1" value="120.59567961679564" />
-      <entry key="W1" value="126.87488206732036" />
+      <entry key="MS100" value="0.9704675737482346" />
+      <entry key="MS500" value="1.463547369791006" />
+      <entry key="S2" value="2.6822154825884597" />
+      <entry key="S5" value="3.7040089242318044" />
+      <entry key="S10" value="4.664988098066327" />
+      <entry key="S30" value="9.258386115224798" />
+      <entry key="S60" value="13.531200541601414" />
+      <entry key="M2" value="17.169966961654186" />
+      <entry key="M5" value="22.785710180815176" />
+      <entry key="M10" value="30.491073872540028" />
+      <entry key="M15" value="36.881052476999216" />
+      <entry key="M30" value="53.26808512187805" />
+      <entry key="H1" value="75.56183235166476" />
+      <entry key="H2" value="97.40782853383548" />
+      <entry key="H4" value="115.66226884987847" />
+      <entry key="D1" value="141.51277024728856" />
+      <entry key="W1" value="147.86247422157018" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -383,7 +385,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.ConsultantApplication.executor&quot;: &quot;Run&quot;
   },
@@ -434,7 +436,8 @@
               <entry key="AiServiceApplication" value="STOPPED" />
               <entry key="CartApplication" value="STOPPED" />
               <entry key="GatewayApplication" value="STOPPED" />
-              <entry key="ItemApplication" value="STOPPED" />
+              <entry key="ItemApplication" value="FAILED" />
+              <entry key="ItemApplication2" value="FAILED" />
               <entry key="PayApplication" value="STOPPED" />
               <entry key="TradeApplication" value="STOPPED" />
               <entry key="UserApplication" value="STOPPED" />
@@ -714,7 +717,9 @@
       <workItem from="1781682477699" duration="10103000" />
       <workItem from="1781695822367" duration="9570000" />
       <workItem from="1781748381601" duration="92000" />
-      <workItem from="1781748500214" duration="1430000" />
+      <workItem from="1781748500214" duration="5473000" />
+      <workItem from="1781767805272" duration="509000" />
+      <workItem from="1781768339647" duration="4932000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -796,7 +801,23 @@
       <option name="project" value="LOCAL" />
       <updated>1781614193999</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix(item): 修复恢复库存失败异常处理&#10;&#10;- 统一异常消息格式，移除多余的空格字符&#10;- 保持一致的代码缩进和格式化风格">
+      <option name="closed" value="true" />
+      <created>1781750020431</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1781750020431</updated>
+    </task>
+    <task id="LOCAL-00012" summary="style(workspace): 更新IDEA工作区配置和缓存设置&#10;&#10;- 调整变更列表注释从删除文档改为更新网站标题和图标&#10;- 更新索引文件计数从635减少到628&#10;- 添加Nacos配置管理器跳过检查设置&#10;- 重置代码完成特性统计数值&#10;- 更改设置编辑器选中配置从同步设置为外观主题&#10;- 添加新的工作时间记录条目&#10;- 更新最后提交消息内容&#10;- 增加本地任务计数器到11">
+      <option name="closed" value="true" />
+      <created>1781750041492</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1781750041492</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -836,7 +857,9 @@
     <MESSAGE value="fix(ai-consultant): 优化AI顾问的商品推荐和前端交互体验&#10;&#10;- 重构商品卡片样式，提升视觉效果和用户体验&#10;- 实现价格区间过滤功能，支持用户按预算筛选商品&#10;- 优化商品详情展示，添加品牌、分类、销量等元数据&#10;- 改进错误处理和加载状态管理&#10;- 集成真实的商品数据获取，替换模拟数据&#10;- 优化移动端适配和响应式布局&#10;- 添加空状态提示和加载动画效果" />
     <MESSAGE value="docs(ai-service): 删除AI服务商品推荐相关文档&#10;&#10;- 删除 COMPLETION_REPORT.md 项目完成报告&#10;- 删除 IMPLEMENTATION_SUMMARY.md 实现完成总结&#10;- 删除 ISSUE_RESOLVED.md 启动问题解决方案&#10;- 删除 PROJECT_STRUCTURE.md 项目结构详解&#10;- 删除 QUICK_START.md 快速启动指南&#10;- 删除 RECOMMENDATION_GUIDE.md 推荐功能使用指南&#10;- 删除 STARTUP_TROUBLESHOOTING.md 启动故障排查&#10;- 删除 SYSTEM_PROMPT_UPDATES.md 系统提示词更新&#10;- 删除 TECHNICAL_SPECIFICATIONS.md 技术规格说明&#10;- 更新 .idea/dataSources.local.xml 移除JDBC catalog配置" />
     <MESSAGE value="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(nginx): 更新网站标题和添加网站图标&#10;&#10;- 将AI商品顾问页面标题从&quot;黑马商城&quot;更改为&quot;乐购商城&quot;&#10;- 添加网站图标链接指向./img/legosmall.png&#10;- 添加多个子项目的.gitignore文件配置&#10;- 添加nginx错误页面50x.html模板&#10;- 添加axios.min.js库文件到刷新管理后台" />
+    <MESSAGE value="fix(item): 修复恢复库存失败异常处理&#10;&#10;- 统一异常消息格式，移除多余的空格字符&#10;- 保持一致的代码缩进和格式化风格" />
+    <MESSAGE value="style(workspace): 更新IDEA工作区配置和缓存设置&#10;&#10;- 调整变更列表注释从删除文档改为更新网站标题和图标&#10;- 更新索引文件计数从635减少到628&#10;- 添加Nacos配置管理器跳过检查设置&#10;- 重置代码完成特性统计数值&#10;- 更改设置编辑器选中配置从同步设置为外观主题&#10;- 添加新的工作时间记录条目&#10;- 更新最后提交消息内容&#10;- 增加本地任务计数器到11" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(workspace): 更新IDEA工作区配置和缓存设置&#10;&#10;- 调整变更列表注释从删除文档改为更新网站标题和图标&#10;- 更新索引文件计数从635减少到628&#10;- 添加Nacos配置管理器跳过检查设置&#10;- 重置代码完成特性统计数值&#10;- 更改设置编辑器选中配置从同步设置为外观主题&#10;- 添加新的工作时间记录条目&#10;- 更新最后提交消息内容&#10;- 增加本地任务计数器到11" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
