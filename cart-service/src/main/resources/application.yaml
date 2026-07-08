@@ -13,7 +13,7 @@ feign:
     enabled: true
 hm:
   db:
-    database: hm-cart
+    database: lm-cart
   swagger:
     title: 黑马商城购物车接口文档
     desc: 黑马商城购物车接口文档

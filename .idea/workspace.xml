@@ -5,10 +5,505 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bcad457-b642-452d-8ed7-3de707f50981" name="更改" comment="style(workspace): 更新IDEA工作区配置和缓存设置&#10;&#10;- 调整变更列表注释从删除文档改为更新网站标题和图标&#10;- 更新索引文件计数从635减少到628&#10;- 添加Nacos配置管理器跳过检查设置&#10;- 重置代码完成特性统计数值&#10;- 更改设置编辑器选中配置从同步设置为外观主题&#10;- 添加新的工作时间记录条目&#10;- 更新最后提交消息内容&#10;- 增加本地任务计数器到11">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/CartClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/ItemClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/PayClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/TradeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/UserClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/falback/ItemClientFallbackFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/falback/PayClientFallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/dto/ItemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/dto/OrderDetailDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/dto/PayOrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/CartClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/PayClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/TradeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/UserClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/ItemClientFallbackFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/ItemClientFallbackFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/PayClientFallback$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/falback/PayClientFallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/ItemDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/OrderDetailDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/dto/PayOrderDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/advice/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/JsonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MQConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MqConsumeErrorAutoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MyBatisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/domain/PageDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/domain/PageQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/domain/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/exception/BadRequestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/exception/BizIllegalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/exception/CommonException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/exception/DbException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/exception/ForbiddenException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/exception/UnauthorizedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/interceptors/UserInfoInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/BeanUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/CollUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/Convert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/CookieBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/RabbitMqHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/UserContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/utils/WebUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/advice/CommonExceptionAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/JsonConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MqConsumeErrorAutoConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/config/MyBatisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/PageDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/PageQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/domain/R.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/BadRequestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/BizIllegalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/CommonException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/DbException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/ForbiddenException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/exception/UnauthorizedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/interceptors/UserInfoInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/BeanUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/CollUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/Convert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/CookieBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/RabbitMqHelper$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/RabbitMqHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/UserContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/classes/com/hmall/common/utils/WebUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/config/AuthProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/config/JwtProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/filters/AuthGlobalFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/filters/MyGlobalFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/routers/DynamicRouteLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/utils/JwtTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/bootstrap.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/hmall.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/bootstrap.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/GatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/AuthProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/JwtProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/filters/AuthGlobalFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/routers/DynamicRouteLoader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/routers/DynamicRouteLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/com/hmall/gateway/utils/JwtTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/target/classes/hmall.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/HMallApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/config/AuthProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/config/JwtProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/config/MvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/AddressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/ItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/PayController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/SearchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/AddressDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/CartFormDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/ItemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/LoginFormDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/OrderDetailDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/OrderFormDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/PayApplyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/dto/PayOrderFormDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/OrderLogistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/PayOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/query/ItemPageQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/vo/CartVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/vo/OrderVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/vo/PayOrderVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/vo/UserLoginVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/enums/PayChannel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/enums/PayStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/enums/PayType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/enums/UserStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/interceptor/LoginInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/AddressMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/CartMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/ItemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderDetailMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderLogisticsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/PayOrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IAddressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/ICartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderLogisticsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IPayOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/AddressServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/CartServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/ItemServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderDetailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderLogisticsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/PayOrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/utils/JwtTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application-dev.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application-local.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/hmall.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/CartMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/ItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/OrderDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/OrderLogisticsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/PayOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/TradeClient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/test/java/com/hmall/service/impl/HutoolTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/test/java/com/hmall/service/impl/ItemServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/application-dev.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/application-local.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/HMallApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/config/AuthProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/config/JwtProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/config/MvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/ItemController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/PayController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/SearchController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/AddressDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/CartFormDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/ItemDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/LoginFormDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/OrderDetailDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/OrderFormDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/PayApplyDTO$PayApplyDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/PayApplyDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/PayOrderFormDTO$PayOrderFormDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/dto/PayOrderFormDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/OrderDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/OrderLogistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/PayOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/po/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/query/ItemPageQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/vo/CartVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/vo/OrderVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/vo/PayOrderVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/domain/vo/UserLoginVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/enums/PayChannel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/enums/PayStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/enums/PayType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/enums/UserStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/CartMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/ItemMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/OrderDetailMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/OrderLogisticsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/PayOrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IAddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/ICartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IItemService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IOrderDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IOrderLogisticsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IPayOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/IUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/AddressServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/CartServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/ItemServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/OrderDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/OrderLogisticsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/PayOrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/com/hmall/utils/JwtTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/hmall.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/CartMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/ItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/OrderDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/OrderLogisticsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/PayOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/TradeClient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/test-classes/com/hmall/service/impl/HutoolTest$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/test-classes/com/hmall/service/impl/HutoolTest$User2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/test-classes/com/hmall/service/impl/HutoolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/target/test-classes/com/hmall/service/impl/ItemServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/._cache_nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/fastcgi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/fastcgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/koi-win" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/mime.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/scgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/uwsgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/conf/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/geo2nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/unicode2nginx/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/unicode2nginx/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/vim/indent/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/contrib/vim/syntax/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/CHANGES.ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/OpenSSL.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/PCRE.LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/docs/zlib.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/50x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/hm-refresh-admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/css/element.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/css/fonts/element-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/css/fonts/element-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/bgc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/full-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/login_center_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/ts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/tt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/images/ys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/auth/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/auth/role.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/auth/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/class/student.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/goods/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/goods/list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/pages/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/view-router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hm-refresh-admin/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/hm-mall-admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/css/element.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/css/fonts/element-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/css/fonts/element-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/js/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-admin/users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/hm-mall-portal.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/ai-consultant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/banner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/carts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/orderInfo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pages-cart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pages-getOrderInfo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pages-index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pages-login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pages-paysuccess.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pages-weixinpay.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/pay.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/webbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/css/webbase2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/57b51ea9Nb862ca5e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/account.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/ad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/ad1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/ad2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/ali.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/banner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/banner3x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/banner4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/barrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/brand_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/cartPanelViewIcons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/choosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/duihuan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/erweima.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-b01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-b02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/floor-1-b03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/goods.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/heima.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/icon-red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/interest01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/interest02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/interest03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/interest04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/interest05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/interest06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/lego.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/legosmall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/like_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/linker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/loginbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/mod-list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/phone-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/quan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/sina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/today01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/today02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/today03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/today04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/wx_cz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/img/zoom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/copyright.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/foot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/qrcode.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/top.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/order-confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/pay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/paysuccess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/hmall-portal/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/html/verification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmall-nginx/nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +644,7 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="634" />
+    <option name="cachedIndexableFilesCount" value="689" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -227,61 +722,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0119255151620803" />
-      <entry key="MS500" value="1.4908181851709705" />
-      <entry key="S2" value="2.737187238036518" />
-      <entry key="S5" value="3.7434769693114696" />
-      <entry key="S10" value="4.690282611993053" />
-      <entry key="S30" value="9.273546372565326" />
-      <entry key="S60" value="13.542308243632501" />
-      <entry key="M2" value="17.177114476670923" />
-      <entry key="M5" value="22.771105113955894" />
-      <entry key="M10" value="30.339378796718673" />
-      <entry key="M15" value="36.51887194910623" />
-      <entry key="M30" value="52.20907499890294" />
-      <entry key="H1" value="73.55392466033217" />
-      <entry key="H2" value="94.41050765586802" />
-      <entry key="H4" value="111.55902294289886" />
-      <entry key="D1" value="135.2453613183315" />
-      <entry key="W1" value="140.9762111448756" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000327889" />
+      <entry key="S2" value="1.0024259784255645" />
+      <entry key="S5" value="1.1055928977427212" />
+      <entry key="S10" value="1.4308391306828225" />
+      <entry key="S30" value="2.4553755020264916" />
+      <entry key="S60" value="3.4431065696915297" />
+      <entry key="M2" value="5.2873571098102925" />
+      <entry key="M5" value="12.906210041538905" />
+      <entry key="M10" value="23.98179767453358" />
+      <entry key="M15" value="32.4429312941882" />
+      <entry key="M30" value="51.50316652186152" />
+      <entry key="H1" value="75.81476902099179" />
+      <entry key="H2" value="99.38287291276947" />
+      <entry key="H4" value="118.57201853237277" />
+      <entry key="D1" value="144.6395909278894" />
+      <entry key="W1" value="150.8859611233037" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.9256914693567893E-259" />
-      <entry key="S5" value="3.2646353776843386E-104" />
-      <entry key="S10" value="1.8068302016748363E-52" />
-      <entry key="S30" value="5.6533487879101E-18" />
-      <entry key="S60" value="2.377677183284714E-9" />
-      <entry key="M2" value="4.87614647771794E-5" />
-      <entry key="M5" value="0.018963460144103206" />
-      <entry key="M10" value="0.1557940037311118" />
-      <entry key="M15" value="0.36677492065035827" />
-      <entry key="M30" value="1.064692613118332" />
-      <entry key="H1" value="2.0132153457351687" />
-      <entry key="H2" value="3.00118289450309" />
-      <entry key="H4" value="4.10571945675621" />
-      <entry key="D1" value="6.267964937159919" />
-      <entry key="W1" value="6.88634789041458" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="8.965282225346216E-137" />
+      <entry key="S10" value="9.468517426369453E-69" />
+      <entry key="S30" value="2.1155696480904965E-23" />
+      <entry key="S60" value="4.599532202400023E-12" />
+      <entry key="M2" value="2.144653472325907E-6" />
+      <entry key="M5" value="0.005435377821487782" />
+      <entry key="M10" value="0.08340782870999479" />
+      <entry key="M15" value="0.24182638478585575" />
+      <entry key="M30" value="0.8645224323917742" />
+      <entry key="H1" value="1.8141209764260608" />
+      <entry key="H2" value="2.8489214094983524" />
+      <entry key="H4" value="4.000214446987082" />
+      <entry key="D1" value="6.24082817500218" />
+      <entry key="W1" value="6.882080821800356" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9704675737482346" />
-      <entry key="MS500" value="1.463547369791006" />
-      <entry key="S2" value="2.6822154825884597" />
-      <entry key="S5" value="3.7040089242318044" />
-      <entry key="S10" value="4.664988098066327" />
-      <entry key="S30" value="9.258386115224798" />
-      <entry key="S60" value="13.531200541601414" />
-      <entry key="M2" value="17.169966961654186" />
-      <entry key="M5" value="22.785710180815176" />
-      <entry key="M10" value="30.491073872540028" />
-      <entry key="M15" value="36.881052476999216" />
-      <entry key="M30" value="53.26808512187805" />
-      <entry key="H1" value="75.56183235166476" />
-      <entry key="H2" value="97.40782853383548" />
-      <entry key="H4" value="115.66226884987847" />
-      <entry key="D1" value="141.51277024728856" />
-      <entry key="W1" value="147.86247422157018" />
+      <entry key="MS100" value="0.9201876506248751" />
+      <entry key="MS500" value="0.9835020740583624" />
+      <entry key="S2" value="0.998263232376793" />
+      <entry key="S5" value="1.103727019115768" />
+      <entry key="S10" value="1.4296224987962898" />
+      <entry key="S30" value="2.4546673239343124" />
+      <entry key="S60" value="3.442525593191388" />
+      <entry key="M2" value="5.286323472189077" />
+      <entry key="M5" value="12.909286372758313" />
+      <entry key="M10" value="24.06204782643109" />
+      <entry key="M15" value="32.68095161653281" />
+      <entry key="M30" value="52.362603725464545" />
+      <entry key="H1" value="77.62384761362433" />
+      <entry key="H2" value="102.22799192920313" />
+      <entry key="H4" value="122.569753148199" />
+      <entry key="D1" value="150.87985362102626" />
+      <entry key="W1" value="157.76795548071675" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -436,7 +931,7 @@
               <entry key="AiServiceApplication" value="STOPPED" />
               <entry key="CartApplication" value="STOPPED" />
               <entry key="GatewayApplication" value="STOPPED" />
-              <entry key="ItemApplication" value="FAILED" />
+              <entry key="ItemApplication" value="STOPPED" />
               <entry key="ItemApplication2" value="FAILED" />
               <entry key="PayApplication" value="STOPPED" />
               <entry key="TradeApplication" value="STOPPED" />
@@ -547,7 +1042,7 @@
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="hm-gateway" />
+      <module name="lm-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -632,8 +1127,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
       </set>
     </attachedChunks>
   </component>
@@ -719,7 +1214,10 @@
       <workItem from="1781748381601" duration="92000" />
       <workItem from="1781748500214" duration="5473000" />
       <workItem from="1781767805272" duration="509000" />
-      <workItem from="1781768339647" duration="4932000" />
+      <workItem from="1781768339647" duration="4995000" />
+      <workItem from="1782212765354" duration="19000" />
+      <workItem from="1783416957155" duration="2437000" />
+      <workItem from="1783433916796" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="feat(ai): 新增AI商品顾问功能页面并重构后端服务&#10;&#10;- 添加AI商品顾问前端页面(ai-consultant.html)，包含聊天界面和商品推荐模块&#10;- 重命名ConsultantApplication为AiServiceApplication并启用Feign客户端&#10;- 配置应用连接Milvus向量数据库替换Redis，更新API密钥和模型版本&#10;- 修改ChatController支持SSE流式响应，实现TokenStream处理&#10;- 配置Nacos服务发现和MySQL数据源，调整Redis连接参数&#10;- 添加商品推荐API端点，实现基于用户请求的智能商品推荐功能">
       <option name="closed" value="true" />
@@ -817,7 +1315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781750041492</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="style(workspace): 更新IDEA工作区配置和缓存设置&#10;&#10;- 调整变更列表注释从删除文档改为更新网站标题和图标&#10;- 更新索引文件计数从635减少到628&#10;- 添加Nacos配置管理器跳过检查设置&#10;- 重置代码完成特性统计数值&#10;- 更改设置编辑器选中配置从同步设置为外观主题&#10;- 添加新的工作时间记录条目&#10;- 更新最后提交消息内容&#10;- 增加本地任务计数器到11">
+      <option name="closed" value="true" />
+      <created>1781783274940</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1781783274940</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

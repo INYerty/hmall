@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lm-common" />
         <module name="cart-service" />
         <module name="pay-service" />
-        <module name="hm-gateway" />
         <module name="trade-service" />
-        <module name="hm-common" />
+        <module name="lm-gateway" />
         <module name="item-service" />
         <module name="user-service" />
         <module name="ai-service" />
-        <module name="hm-api" />
+        <module name="lm-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -25,11 +25,11 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ai-service" options="-parameters" />
       <module name="cart-service" options="-parameters" />
-      <module name="hm-api" options="-parameters" />
-      <module name="hm-common" options="-parameters" />
-      <module name="hm-gateway" options="-parameters" />
       <module name="hm-service" options="-parameters" />
       <module name="item-service" options="-parameters" />
+      <module name="lm-api" options="-parameters" />
+      <module name="lm-common" options="-parameters" />
+      <module name="lm-gateway" options="-parameters" />
       <module name="pay-service" options="-parameters" />
       <module name="trade-service" options="-parameters" />
       <module name="user-service" options="-parameters" />

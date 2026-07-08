@@ -45,7 +45,7 @@ server:
 
 hm:
   db:
-    database: hm-item
+    database: lm-item
   swagger:
     title: 黑马商城商品接口文档
     desc: 黑马商城商品服务接口文档

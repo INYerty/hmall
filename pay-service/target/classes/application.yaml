@@ -51,4 +51,4 @@ server:
 #
 hm:
   db:
-    database: hm-pay
+    database: lm-pay

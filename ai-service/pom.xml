@@ -113,7 +113,7 @@
         <!-- hm-api (可能需要适配 Jakarta) -->
         <dependency>
             <groupId>com.heima</groupId>
-            <artifactId>hm-api</artifactId>
+            <artifactId>lm-api</artifactId>
             <version>1.0.0</version>
             <exclusions>
                 <exclusion>
